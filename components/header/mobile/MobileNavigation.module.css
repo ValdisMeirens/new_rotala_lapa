@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  /* position: absolute; */
+  /* background-color: #1b1212; */
+  background-color: #181717;
+}
+
+.logocontainer {
+  width: 20%;
+  height: auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.navcontainer {
+  width: 10%;
+  height: auto;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+}
+
+.overlaycontainer {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000000;
+  margin-top: -80px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.navtextcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  font-size: 1.25rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.childnavtextcontainer {
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.childnavtextcontainer li {
+  letter-spacing: 0.25rem;
+  border-bottom: 1px solid #d1dddb;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.childnavtextcontainer li:hover {
+  border-bottom: 1px solid #476930;
+  color: darkgreen;
+}
+
+.socialnetworkcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  height: 8%;
+  bottom: 0;
+  position: fixed;
+  width: 90%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin: auto;
+}
+
+.sociallink {
+  width: 8%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+@media all and (min-width: 750px) {
+  .mobileContainer {
+    display: none;
+  }
+}

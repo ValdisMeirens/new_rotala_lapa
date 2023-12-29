@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.backgroundImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/3;
+  object-fit: cover;
+  opacity: 0.3;
+  /* aspect-ratio: 2/1; */
+  /* object-fit: cover;
+  object-position: center;
+  opacity: 0.3; */
+}
+
+.text {
+  color: #d1dddb;
+  font-size: 8vw;
+  text-align: center;
+  letter-spacing: 0.75rem;
+}
+
+.imageTextContainer {
+  position: absolute;
+  width: 100%;
+}
+/* 
+.backgroundImage,
+.imageText {
+  width: 100%;
+  height: auto;
+} */

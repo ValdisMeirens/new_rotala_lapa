@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(/fonts/Raleway-Regular.ttf) format("woff2"),
+    url(/fonts/Raleway-Black.ttf) format("woff2"),
+    url(/fonts/Raleway-BlackItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-Bold.ttf) format("woff2"),
+    url(/fonts/Raleway-BoldItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-ExtraBold.ttf) format("woff2"),
+    url(/fonts/Raleway-ExtraBoldItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-ExtraLight.ttf) format("woff2"),
+    url(/fonts/Raleway-ExtraLightItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-Italic.ttf) format("woff2"),
+    url(/fonts/Raleway-Italic-VariableFont_wght.ttf) format("woff2"),
+    url(/fonts/Raleway-Light.ttf) format("woff2"),
+    url(/fonts/Raleway-LightItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-Medium.ttf) format("woff2"),
+    url(/fonts/Raleway-MediumItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-SemiBold.ttf) format("woff2"),
+    url(/fonts/Raleway-SemiBoldItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-Thin.ttf) format("woff2"),
+    url(/fonts/Raleway-ThinItalic.ttf) format("woff2"),
+    url(/fonts/Raleway-VariableFont_wght.ttf) format("woff2");
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dark {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}

@@ -1,0 +1,41 @@
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5%;
+  /* border-bottom: 1px solid black; */
+}
+
+.title {
+  font-size: 1.25rem;
+  /* font-weight: 400; */
+  /* color: rgb(41, 117, 41); */
+  color: #013220;
+
+  letter-spacing: 0.1rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.text {
+  font-size: 0.75rem;
+  line-height: 2rem;
+  text-align: center;
+  color: rgb(110, 110, 110);
+
+  /* width: 90%; */
+  /* margin: auto; */
+}
+
+@media all and (min-width: 750px) {
+  .newsContainer {
+    display: none;
+  }
+}

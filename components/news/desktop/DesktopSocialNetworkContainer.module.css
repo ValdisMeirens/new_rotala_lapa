@@ -1,0 +1,19 @@
+.container {
+  background-color: rgba(234, 234, 234);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.imagecontainer {
+  display: flex;
+  flex-direction: row;
+  transition: transform 1s ease;
+  /* border: 1px solid orange; */
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}

@@ -1,0 +1,16 @@
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.line {
+  width: 80%;
+  margin: auto;
+}
+
+@media all and (min-width: 750px) {
+  .aboutUsContainer {
+    display: none;
+  }
+}

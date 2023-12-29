@@ -1,0 +1,59 @@
+.container {
+  /* background-color: #1b1212; */
+  background-color: #181717;
+}
+
+.container2 {
+  display: flex;
+  /* background-color: #1b1212; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  color: green;
+}
+
+.text {
+  font-size: 1vmax;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.logocontainer {
+  width: 10%;
+  height: auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.circlecontainer {
+  width: 6%;
+  height: auto;
+}
+
+.circle {
+  width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 950px) {
+  .logocontainer {
+    width: 8%;
+  }
+  .circlecontainer {
+    width: 5%;
+  }
+  .text {
+    font-size: 1.25vmax;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    display: none;
+  }
+}

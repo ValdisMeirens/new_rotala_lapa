@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.imageTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-wrap: wrap;
+  text-align: center;
+  vertical-align: bottom;
+  /* color: rgb(2, 24, 2); */
+}
+
+.backgroundImage,
+.imageText {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  vertical-align: bottom;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: #013220;
+  letter-spacing: 0.1rem;
+  color: #d1dddb;
+}

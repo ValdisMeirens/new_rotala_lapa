@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  vertical-align: bottom;
+}
+.fullpicturecontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  margin: 0.3rem;
+  padding: 0.1rem;
+  color: white;
+  text-align: right;
+  position: absolute;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 0;
+  right: 0;
+}
+
+.overlaycontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.overlayImage {
+  max-width: 80vw;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.navigator {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media all and (min-width: 750px) {
+  .row {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.latestevents {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  color: #013220;
+  letter-spacing: 0.1rem;
+}
+
+.calendaritems {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}

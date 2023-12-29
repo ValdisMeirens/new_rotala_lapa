@@ -1,0 +1,57 @@
+.historycontainer {
+  width: 85%;
+  margin-inline: auto;
+  padding: 2.5% 0;
+}
+
+.title {
+  font-size: 2rem;
+  padding: 2% 0.25%;
+  color: #013220;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.text {
+  text-align: justify;
+  line-height: 2rem;
+  color: rgb(110, 110, 110);
+}
+
+.years {
+  font-weight: 900;
+}
+
+.rotala {
+  color: #013220;
+  font-weight: 900;
+}
+
+.authors {
+  color: #013220;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 900px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .title {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.15rem;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  .text {
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+  }
+  .historycontainer {
+    width: 90%;
+  }
+}

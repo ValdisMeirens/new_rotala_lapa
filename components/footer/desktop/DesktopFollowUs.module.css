@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  /* height: 2rem; */
+  /* background-color: #1b1212; */
+  background-color: #181717;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.sectioncontainer {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  /* justify-content: center;
+  align-items: center; */
+  /* justify-content: space-between; */
+
+  align-items: center;
+  /* justify-items: center; */
+  padding-right: 1rem;
+}
+
+.socialNetworkContainer {
+  display: flex;
+  justify-content: left;
+
+  z-index: 1000;
+
+  /* align-items: center; */
+  /* justify-items: center; */
+}
+
+.rotala {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  font-size: 0.75rem;
+  color: rgb(199, 199, 199);
+}

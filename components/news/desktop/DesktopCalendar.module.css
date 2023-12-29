@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstpartcontainer {
+  display: flex;
+  position: relative;
+}
+
+.datecontainer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #295e11;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  flex-direction: column;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  align-items: center;
+
+  outline: none;
+  line-height: 1.2rem;
+  padding: 0.5rem;
+  font-weight: 900;
+}
+.imagecontainer {
+  width: 100%;
+  height: 200px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: bottom;
+}
+
+.month {
+  font-size: 0.5rem;
+}
+
+.dates {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.secondpartcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0% 10% 5%;
+  background-color: rgb(247, 247, 247, 0.9);
+}
+
+.hovercontainer:hover {
+  background-color: rgba(13, 94, 54, 0.9);
+  /* cursor: pointer; */
+}
+
+.event {
+  font-size: 0.65rem;
+  color: #295e11;
+  font-weight: 900;
+}
+
+.eventname {
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+.placecontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.timesvg {
+  width: 100%;
+  height: auto;
+}
+
+.timecontainer,
+.placeinfocontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1%;
+  background-color: rgba(29, 33, 41, 0.06);
+  outline: none;
+  border-radius: 10px;
+  padding: 3px;
+}
+.svgcontainer {
+  width: 1.1rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 0.75rem;
+  margin-left: 7px;
+}
+
+.placeinfocontainer {
+  margin-left: 1%;
+}
+
+/* .calendaroverlaycontainer {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid red;
+}
+
+.overlaycontainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+  height: auto;
+  margin-inline: auto;
+  border: 1px solid green;
+}
+
+.imageoverlaycontainer {
+  width: 100%;
+  vertical-align: bottom;
+  border: 1px solid green;
+}
+
+.imageoverlay {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+} */

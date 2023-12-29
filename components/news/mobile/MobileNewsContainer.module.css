@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  aspect-ratio: 9/16;
+  /* z-index: -100; */
+  background-color: rgba(0, 0, 0, 1);
+  overflow-x: hidden;
+}
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9/16;
+  position: absolute;
+  opacity: 0.5;
+  /* z-index: -10; */
+}
+
+/* .textContainer {
+  text-align: center;
+
+  color: rgba(255, 252, 252, 0.8);
+  background-color: rgb(28, 66, 28);
+} */
