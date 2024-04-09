@@ -1,0 +1,216 @@
+.container {
+  display: flex;
+  background-color: rgba(22, 100, 52, 0.03);
+  /* padding: 2%; */
+  background-color: #0b0b0d;
+}
+
+.div1 {
+  flex: 1;
+}
+
+.div2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.card_container div {
+  width: 65%;
+  min-width: 250px;
+
+  height: 65%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 100% 100%;
+  transition: all 2s;
+}
+
+.person {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(22, 100, 52, 0.8);
+  transform: rotate(0deg);
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question,
+.answer,
+.name,
+.title {
+  color: #eceeff;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.title {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.question {
+  flex: 1;
+  font-size: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+
+  font-weight: 500;
+  letter-spacing: -0.01rem;
+}
+.answer {
+  flex: 3;
+  font-size: 0.75rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -0.01rem;
+}
+
+.person:hover {
+  transform: rotate(5deg) translate(0px, -30px);
+  transition: all 1s;
+}
+
+.q1 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(32, 201, 151, 0.8);
+  transform: rotate(10deg) translate(0px, -30px);
+}
+
+.q2 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(92, 124, 250, 0.8);
+  transform: rotate(20deg) translate(0px, 80px);
+}
+.q3 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(204, 93, 232, 0.8);
+  transform: rotate(30deg) translate(-20px, 40px);
+}
+.q4 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(173, 181, 189, 0.8);
+  transform: rotate(50deg) translate(-80px, 80px);
+}
+.q5 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(132, 94, 247, 0.8);
+  transform: rotate(-10deg) translate(-10px, -30px);
+}
+.q6 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(148, 216, 45, 0.8);
+  transform: rotate(-20deg) translate(50px, 20px);
+}
+.q7 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(34, 184, 207, 0.8);
+  transform: rotate(-60deg) translate(100px, -40px);
+}
+.q8 {
+  grid-area: 3 / 2 / 9 / 4;
+  background-color: rgba(255, 169, 77, 0.8);
+  transform: rotate(-40deg) translate(-10px, 0px);
+}
+
+.q1:hover {
+  transform: rotate(15deg);
+  transition: all 1s;
+}
+.q2:hover {
+  transform: rotate(25deg);
+  transition: all 1s;
+}
+
+.q3:hover {
+  transform: rotate(35deg);
+  transition: all 1s;
+}
+.q4:hover {
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+.q5:hover {
+  transform: rotate(-15deg);
+  transition: all 1s;
+}
+.q6:hover {
+  transform: rotate(-25deg);
+  transition: all 1s;
+}
+.q7:hover {
+  transform: rotate(-35deg);
+  transition: all 1s;
+}
+.q8:hover {
+  transform: rotate(-45deg);
+  transition: all 1s;
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  margin: auto;
+  /* mask-image: radial-gradient(
+    circle at center top,
+    transparent 20px,
+    black 21px
+  ); */
+  min-height: 350px;
+  min-width: 350px;
+
+  /* clip-path: polygon(
+    62% 1%,
+    94% 14%,
+    99% 44%,
+    95% 81%,
+    73% 98%,
+    32% 100%,
+    6% 85%,
+    0% 43%,
+    17% 5%
+  ); */
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+  /* border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%; */
+  border-start-end-radius: 75% 100%;
+  direction: rtl;
+}

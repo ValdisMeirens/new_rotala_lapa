@@ -1,55 +1,47 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import { Fragment } from "react";
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
-import Main from "../components/news/Main";
-import { server } from "../components/config/index";
+import styles from "./home.module.css";
+import Footer from "@/components/footer/footer";
+import ContactsContainer from "@/components/news/contacts_container";
+import EventContainer from "@/components/news/events_container";
+import ImageContainer from "@/components/news/image_container";
+import LogoContainer from "@/components/news/logo_container";
+import RotalaContainer from "@/components/news/rotala_container";
+import { server } from "@/components/config/constants";
 
-export default function Home({ news, calendar, calendar_mobile }) {
-  const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
-  const newsArray = [...news.news];
-  const calendarArray = [...calendar];
-  const calendarMobileArray = [...calendar_mobile];
-
+export default function Home({ calendar }) {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>TDA Rotaļa</title>
         <meta property="og:title" content="TDA Rotaļa" key="title" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
-        <meta name="description" content={description} />
-        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="description" content="TDA Rotaļa" />
       </Head>
 
-      <main>
-        <Header />
-        <Main
-          news={newsArray}
-          calendar={calendarArray}
-          calendarMobile={calendarMobileArray}
-        />
-        {/* <Footer /> */}
-      </main>
-    </Fragment>
+      <div className={styles.container}>
+        <LogoContainer />
+        {/* <ImageContainer news={news} /> */}
+        <EventContainer calendar={calendar} />
+        <RotalaContainer />
+        <ContactsContainer />
+        <Footer />
+      </div>
+    </>
   );
 }
 
 export async function getServerSideProps() {
-  const resNews = await fetch(`${server}/api/news`);
-  const dataNews = await resNews.json();
-
+  // const resCalendar = await fetch(`${HOST}/api/kalendars`);
   const resCalendar = await fetch(`${server}/api/kalendars`);
   const dataCalendar = await resCalendar.json();
 
-  const resCalendarMobile = await fetch(`${server}/api/kalendars_mobile`);
-  const dataCalendarMobile = await resCalendarMobile.json();
-
   return {
     props: {
-      news: dataNews,
       calendar: dataCalendar,
-      calendar_mobile: dataCalendarMobile,
     },
   };
 }

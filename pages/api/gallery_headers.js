@@ -6,11 +6,12 @@ export default async function handler(req, res) {
     port: process.env.MYSQL_PORT,
     database: process.env.MYSQL_DATABASE,
     user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD
+    password: process.env.MYSQL_PASSWORD,
   });
 
   try {
-    const query = "SELECT * FROM gallery_header where active = 1";
+    const query =
+      "SELECT id, name, image_name, place, date_time FROM gallery_header WHERE ACTIVE = 1";
     const values = [];
     const [data] = await dbconnection.execute(query, values);
     dbconnection.end();

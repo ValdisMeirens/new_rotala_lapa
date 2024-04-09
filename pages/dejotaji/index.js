@@ -1,38 +1,27 @@
-import { Fragment } from "react";
+import DancersHeader from "@/components/dancers/dancers_header";
+import DancersContainer from "@/components/dancers/dancers_container";
 
-import Head from "next/head";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import DancersContainer from "@/components/dancers/DancersContainer";
-import { server } from "../../components/config/index";
+import styles from "./dancers.module.css";
+import Footer from "@/components/footer/footer";
+import { server } from "@/components/config/constants";
 
-export default function AboutUsMain({ collective }) {
-  const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
-
+export default function Dancers({ data }) {
   return (
-    <Fragment>
-      <Head>
-        <title>TDA Rotaļa</title>
-        <meta property="og:title" content="TDA Rotaļa" key="title" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta charSet="utf-8" />
-        <meta name="description" content={description} />
-      </Head>
-
-      <Header />
-      <DancersContainer collective={collective} />
+    <div className={styles.container}>
+      <DancersHeader />
+      <DancersContainer dancers={data} />
       <Footer />
-    </Fragment>
+    </div>
   );
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`${server}/api/dejotaji`);
+  const res = await fetch(`${server}/api/dancers`);
   const data = await res.json();
 
   return {
     props: {
-      collective: data,
+      data,
     },
   };
 }

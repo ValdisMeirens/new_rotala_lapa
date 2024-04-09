@@ -1,28 +1,14 @@
-import { Fragment } from "react";
+import styles from "./managment.module.css";
+import Footer from "@/components/footer/footer";
+import ManagmentContainer from "@/components/managment/managment_container";
+import ManagmentHeader from "@/components/managment/managment_header";
 
-import Head from "next/head";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import DesktopMainAboutUs from "../../components/managment/desktop/DesktopMainAboutUs";
-import MobileMainAboutUs from "../../components/managment/mobile/MobileMainAboutUs";
-
-export default function AboutUsMain(props) {
-  const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
-
+export default function Managment() {
   return (
-    <Fragment>
-      <Head>
-        <title>TDA Rotaļa</title>
-        <meta property="og:title" content="TDA Rotaļa" key="title" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta charSet="utf-8" />
-        <meta name="description" content={description} />
-      </Head>
-
-      <Header />
-      <MobileMainAboutUs />
-      <DesktopMainAboutUs />
+    <div className={styles.container}>
+      <ManagmentHeader />
+      <ManagmentContainer />
       <Footer />
-    </Fragment>
+    </div>
   );
 }

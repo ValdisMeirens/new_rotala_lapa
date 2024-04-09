@@ -1,13 +1,7 @@
 .container {
   overflow: hidden;
-  background-color: rgba(14, 30, 37, 0.12);
+  background-color: #0b0b0d;
 }
-
-/* .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  overflow: hidden;
-} */
 
 .row {
   display: flex;
@@ -24,19 +18,19 @@
   vertical-align: bottom;
 }
 
-.imageContainer {
+.imagecontainer {
   overflow: hidden;
   position: relative;
 }
 
-/* .imageparanetcontainer {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-} */
+.imageparanetcontainer {
+  position: relative;
+}
+.overlaypicturecontainer {
+  position: relative;
+}
 
-.image {
+.img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -86,7 +80,7 @@
   cursor: pointer;
 }
 
-.image:hover {
+.img:hover {
   transform: scale(1.1) rotate(2deg);
 }
 
@@ -98,49 +92,4 @@
 
 .backsvg {
   color: white;
-}
-
-/* .my-masonry-grid {
-  display: -webkit-box; 
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px; 
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; 
-  background-clip: padding-box;
-}
-
-.my-masonry-grid_column > div {
-  background: grey;
-  margin-bottom: 30px;
-}
-
-.test {
-  padding: 0.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  width: 100%;
-  height: 100%;
-} */
-
-/* @media all and (max-width: 1100px) {
-  .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 950px) {
-  .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-} */
-
-@media all and (max-width: 750px) {
-  .imageContainer {
-    display: none;
-  }
 }
