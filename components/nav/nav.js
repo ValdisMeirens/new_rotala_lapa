@@ -5,7 +5,7 @@ import close from "../../public/svg/close-svgrepo-com.svg";
 
 import rotala from "../../public/nav/rotala_logo.png";
 import styles from "./nav.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import facebook from "../../public/svg/facebook-svgrepo-com.svg";
 import instagram from "../../public/svg/instagram-svgrepo-com.svg";
 import youtube from "../../public/svg/youtube-svgrepo-com.svg";
@@ -25,6 +25,17 @@ const Nav = () => {
   const onClickHandler = () => {
     setShowOverLay(!showOverLay);
   };
+
+  useEffect(() => {
+    if (showOverLay) {
+      document.body.style.overflow = "hidden !important";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, [showOverLay]);
 
   return (
     <>

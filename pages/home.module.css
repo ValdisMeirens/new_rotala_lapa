@@ -1,7 +1,7 @@
 .container {
   height: 100vh;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .container section {
@@ -16,32 +16,25 @@
 }
 .container section:nth-child(2) {
   background-color: #166534;
+  background-color: #0b0b0d;
 }
 
 .container section:nth-child(3) {
   background-color: #0b0b0d;
 }
 
-.container section:nth-child(4) {
+/* .container section:nth-child(4) {
   position: relative;
   z-index: 1;
   color: #000;
-}
+} */
 
-.container section:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+/* .container section:nth-child(4) {
   background-image: url(../public/contacts/div4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(70%);
-  z-index: -1;
-}
+} */
 
 .imagecontainer {
   width: 100%;

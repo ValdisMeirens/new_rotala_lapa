@@ -91,7 +91,7 @@ const EventContainer = ({ calendar }) => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.heading}>KALENDĀRS</div>
+      <h1 className={styles.heading}>KALENDĀRS</h1>
       <div className={styles.eventscontainer}>{calendar_array}</div>
     </section>
   );

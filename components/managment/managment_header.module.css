@@ -40,6 +40,7 @@
   transition: all 2s ease-in-out;
   outline: 0;
   position: relative;
+  border: 1px solid #166534;
 }
 
 .div1:hover,
@@ -55,6 +56,15 @@
 .div12:hover {
   -webkit-filter: brightness(100%) grayscale(0%);
   filter: brightness(100%) grayscale(0%);
+  transition: all 200ms ease-in-out;
+}
+
+.div6 {
+  transition: all 2s ease-in-out;
+}
+
+.div6:hover {
+  border: 1px solid #166534;
   transition: all 200ms ease-in-out;
 }
 

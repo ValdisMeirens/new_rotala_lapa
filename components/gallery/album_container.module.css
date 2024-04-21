@@ -64,6 +64,9 @@
   align-content: center;
   top: 0;
   right: 0;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 .overlaycontainer {

@@ -35,7 +35,6 @@ export default function Home({ calendar }) {
 }
 
 export async function getServerSideProps() {
-  // const resCalendar = await fetch(`${HOST}/api/kalendars`);
   const resCalendar = await fetch(`${server}/api/kalendars`);
   const dataCalendar = await resCalendar.json();
 

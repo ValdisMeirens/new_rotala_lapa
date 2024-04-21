@@ -29,6 +29,7 @@
   transition: all 2s ease-in-out;
   outline: 0;
   position: relative;
+  border: 1px solid #166534;
 }
 
 .container div:hover {

@@ -88,7 +88,12 @@ const AlbumContainer = ({ gallery }) => {
         <div className={styles.fullpicturecontainer}>
           <div>
             <div onClick={closeHandler} className={styles.close}>
-              <Image src={close} alt="Close SVG" className={styles.closesvg} />
+              <Image
+                src={close}
+                alt="Close SVG"
+                className={styles.closesvg}
+                fill
+              />
             </div>
           </div>
           <div className={styles.overlaycontainer}>
@@ -101,7 +106,6 @@ const AlbumContainer = ({ gallery }) => {
                 alt="Back SVG"
                 className={styles.backsvg}
                 sizes="10vw"
-                quality={10}
               />
             </div>
             <div className={styles.overlaypicturecontainer}>
@@ -122,7 +126,6 @@ const AlbumContainer = ({ gallery }) => {
                 alt="Back SVG"
                 className={styles.forwardsvg}
                 sizes="10vw"
-                quality={10}
               />
             </div>
           </div>
