@@ -5,16 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const EventContainer = ({ calendar }) => {
-  // const variants = {
-  //   initial: {
-  //     opacity: 0,
-  //   },
-  //   animate: {
-  //     opacity: 1,
-  //     transition: { duration: 1, type: "tween", delay: 0.3 },
-  //   },
-  // };
-
   const calendar_array = calendar.map((calendar_data, index) => {
     const date = new Date(calendar_data.k_datums);
     const day = date.getDate();
@@ -63,12 +53,9 @@ const EventContainer = ({ calendar }) => {
       <motion.div
         key={calendar_data.k_id}
         className={styles.event}
-        // variants={variants}
-        // initial="initial"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 2, type: "tween", delay: 0.3 * index }}
-        // whileInView="animate"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "tween", delay: 0.1 * index }}
         viewport={{ once: true }}
       >
         <Image

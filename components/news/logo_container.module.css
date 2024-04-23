@@ -27,7 +27,6 @@
   filter: brightness(70%) grayscale(100%);
   -webkit-transition: all 200ms ease-in-out;
   transition: all 2s ease-in-out;
-  outline: 0;
   position: relative;
   border: 1px solid #166534;
 }
@@ -85,4 +84,15 @@
 }
 .div12 {
   grid-area: 4 / 6 / 6 / 7;
+}
+
+@media all and (max-width: 768px) {
+  .gridcontainer {
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.4rem;
+    padding: 0.25rem;
+  }
+  .gridcontainer div {
+    filter: none;
+  }
 }

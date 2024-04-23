@@ -30,7 +30,7 @@ const LogoContainer = () => {
             fill
             className={styles.img}
             placeholder="blur"
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div2}>
@@ -39,7 +39,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div3}>
@@ -48,7 +48,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div4}>
@@ -57,7 +57,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div5}>
@@ -66,7 +66,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div6}>
@@ -75,7 +75,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img_logo}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div7}>
@@ -84,7 +84,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div8}>
@@ -93,7 +93,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div9}>
@@ -102,7 +102,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div10}>
@@ -111,7 +111,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div11}>
@@ -120,7 +120,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
         <div className={styles.div12}>
@@ -129,7 +129,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="35vw"
+            sizes="50vw"
           />
         </div>
       </div>

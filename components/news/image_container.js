@@ -6,30 +6,6 @@ import Link from "next/link";
 import Nav from "../nav/nav";
 
 const ImageContainer = ({ news }) => {
-  // const variants = {
-  //   initial: (direction) => {
-  //     return {
-  //       x: direction > 0 ? "100vw" : "-100vw",
-  //     };
-  //   },
-  //   animate: {
-  //     x: 0,
-  //     transition: {
-  //       type: "easeIn",
-  //       duration: 0.5,
-  //     },
-  //   },
-  //   exit: (direction) => {
-  //     return {
-  //       x: direction > 0 ? "-100vw" : "100vw",
-  //       transition: {
-  //         type: "easeIn",
-  //         duration: 0.7,
-  //       },
-  //     };
-  //   },
-  // };
-
   const variants = {
     initial: {
       opacity: 0,
@@ -105,9 +81,6 @@ const ImageContainer = ({ news }) => {
         <div key={news[imageIndex].title} className={styles.title}>
           {news[imageIndex].title.toUpperCase()}
         </div>
-
-        {/* <div className={styles.smalltext}>{news[imageIndex].smalltext}</div>
-        <div className={styles.text}>{news[imageIndex].text}</div> */}
         <Link
           href={`/jaunumi/${news[imageIndex].ID}`}
           className={styles.buttondecoration}
@@ -115,13 +88,6 @@ const ImageContainer = ({ news }) => {
           <div className={styles.button}>LASĪT VAIRĀK</div>
         </Link>
       </div>
-
-      {/* <button className={styles.left} onClick={prevStep}>
-        ◀
-      </button>
-      <button className={styles.right} onClick={nextStep}>
-        ▶
-      </button> */}
     </section>
   );
 };
