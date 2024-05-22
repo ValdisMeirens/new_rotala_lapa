@@ -15,9 +15,52 @@ const EventContainer = ({ calendar }) => {
   const [tickets, setTickets] = useState("");
 
   const clickHandler = (calendar_data) => {
+    const date = new Date(calendar_data.k_datums);
+    const day = date.getDate();
+    let month = "";
+
+    switch (date.getMonth()) {
+      case 0:
+        month = "Janvāris";
+        break;
+      case 1:
+        month = "Februāris";
+        break;
+      case 2:
+        month = "Marts";
+        break;
+      case 3:
+        month = "Aprīlis";
+        break;
+      case 4:
+        month = "Maijs";
+        break;
+      case 5:
+        month = "Jūnijs";
+        break;
+      case 6:
+        month = "Jūlijs";
+        break;
+      case 7:
+        month = "Augusts";
+        break;
+      case 8:
+        month = "Septembris";
+        break;
+      case 9:
+        month = "Oktobris";
+        break;
+      case 10:
+        month = "Novembris";
+        break;
+      case 11:
+        month = "Decembris";
+        break;
+    }
+    const date_string = `${day}. ${month}`;
     setSrc(`/events/${calendar_data.afisa}`);
     setText(calendar_data.k_pasakums);
-    setDate(calendar_data.k_datums);
+    setDate(date_string);
     setTickets(calendar_data.biletes_url);
 
     setShowOverlay(!showOverlay);
@@ -105,9 +148,9 @@ const EventContainer = ({ calendar }) => {
             <Image src={src} fill className={styles.img_overlay} />
           </div>
           <div className={styles.text_container}>
-            <div>{text}</div>
-            <div>{date}</div>
-            <div>
+            <div className={styles.titleoverlay}>{text}</div>
+            <div className={styles.dateoverlay}>{date}</div>
+            <div className={styles.ticketurloverlay}>
               <Link href={tickets} target="_blank">
                 BIĻETES
               </Link>
