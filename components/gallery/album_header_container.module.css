@@ -37,10 +37,9 @@
 }
 
 .size {
-  font-size: 1vmax;
+  font-size: 1.1rem;
   text-align: center;
-  letter-spacing: 0.1rem;
-  /* font-weight: 500; */
+  /* letter-spacing: 0.1rem; */
 }
 
 .size:hover {
@@ -49,69 +48,89 @@
   transition: all 0.5s;
 }
 
-/* .container {
-  background-color: #181717;
-}
+.mobile_container_start,
+.mobile_first_part {
+  display: none;
 
-.container2 {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-items: center;
   align-items: center;
-  width: 95%;
-  margin: auto;
-  color: green;
+  height: 8vh;
+  min-height: 50px;
+  background-color: #0b0b0d;
+  color: #166534;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+
+.mobile_container_end {
+  display: none;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #0b0b0d;
+  color: #166534;
+  /* letter-spacing: 0.1rem; */
+}
+
+.mobile_first_part {
+  display: flex;
+}
+
+.test1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 10000;
+  overflow: hidden;
 }
 
 .text {
-  font-size: 1vmax;
+  text-decoration: none;
+  list-style-type: none;
+  color: #eceeff;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid #eceeff;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 100%;
+  overflow: hidden;
   text-align: center;
-  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
 }
 
-.logocontainer {
-  display: flex;
-  width: 10%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+.text:hover {
+  border-bottom: 1px solid #00b22e;
+  color: #00b22e;
 }
-.test {
-  height: 100%;
+.socialnetworkcontainer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-}
-.logo {
-  width: 100%;
-  height: 100%;
-}
-
-.circlecontainer {
-  width: 6%;
-  height: auto;
-  display: flex;
   justify-content: center;
   align-items: center;
   justify-items: center;
 }
 
-.circle {
+.socialnetwork {
+  position: relative;
+  height: 3rem;
   width: 100%;
-  height: auto;
+  color: #00b22e;
 }
-
-@media all and (max-width: 950px) {
-  .logocontainer {
-    width: 8%;
+@media all and (max-width: 768px) {
+  .container {
+    display: none;
   }
-  .circlecontainer {
-    width: 5%;
+  .mobile_container_start,
+  .mobile_container_end {
+    display: flex;
   }
-  .text {
-    font-size: 1.25vmax;
-  }
-} */
+}

@@ -3,8 +3,26 @@
 import styles from "./events_container.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import valdis from "@/public/aboutus/valdis.jpg";
+import Link from "next/link";
 
 const EventContainer = ({ calendar }) => {
+  const [showOverlay, setShowOverlay] = useState(false);
+  const [src, setSrc] = useState("");
+  const [text, setText] = useState("");
+  const [date, setDate] = useState("");
+  const [tickets, setTickets] = useState("");
+
+  const clickHandler = (calendar_data) => {
+    setSrc(`/events/${calendar_data.afisa}`);
+    setText(calendar_data.k_pasakums);
+    setDate(calendar_data.k_datums);
+    setTickets(calendar_data.biletes_url);
+
+    setShowOverlay(!showOverlay);
+  };
+
   const calendar_array = calendar.map((calendar_data, index) => {
     const date = new Date(calendar_data.k_datums);
     const day = date.getDate();
@@ -57,6 +75,7 @@ const EventContainer = ({ calendar }) => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 1, type: "tween", delay: 0.1 * index }}
         viewport={{ once: true }}
+        onClick={() => clickHandler(calendar_data)}
       >
         <Image
           src={`/events/${calendar_data.afisa}`}
@@ -80,6 +99,22 @@ const EventContainer = ({ calendar }) => {
     <section className={styles.container}>
       <h1 className={styles.heading}>KALENDĀRS</h1>
       <div className={styles.eventscontainer}>{calendar_array}</div>
+      {showOverlay && (
+        <div onClick={clickHandler} className={styles.click_container}>
+          <div className={styles.image_container}>
+            <Image src={src} fill className={styles.img_overlay} />
+          </div>
+          <div className={styles.text_container}>
+            <div>{text}</div>
+            <div>{date}</div>
+            <div>
+              <Link href={tickets} target="_blank">
+                BIĻETES
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

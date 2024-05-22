@@ -1,5 +1,6 @@
 .container {
   position: relative;
+  overflow: hidden;
 }
 
 .img {
@@ -7,7 +8,6 @@
   height: auto;
   object-fit: cover;
   object-position: center;
-  transform: scale(1);
   filter: brightness(40%);
 }
 
@@ -23,6 +23,7 @@
   align-items: center;
   align-content: center;
   height: 100%;
+  overflow: hidden;
 }
 
 .title {

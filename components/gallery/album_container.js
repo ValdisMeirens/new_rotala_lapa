@@ -106,6 +106,7 @@ const AlbumContainer = ({ gallery }) => {
                 alt="Back SVG"
                 className={styles.backsvg}
                 sizes="10vw"
+                fill
               />
             </div>
             <div className={styles.overlaypicturecontainer}>
@@ -125,6 +126,7 @@ const AlbumContainer = ({ gallery }) => {
                 src={forward}
                 alt="Back SVG"
                 className={styles.forwardsvg}
+                fill
                 sizes="10vw"
               />
             </div>

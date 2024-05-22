@@ -2,6 +2,7 @@ import Head from "next/head";
 import AlbumContainer from "@/components/gallery/album_container.js";
 import AlbumHeaderContainer from "@/components/gallery/album_header_container";
 import { server } from "@/components/config/constants";
+import Nav from "@/components/nav/nav";
 export default function GalleryIdPage({ gallery }) {
   return (
     <>
@@ -14,6 +15,7 @@ export default function GalleryIdPage({ gallery }) {
       </Head>
       <div>
         <AlbumHeaderContainer />
+
         <AlbumContainer gallery={gallery} />
       </div>
     </>

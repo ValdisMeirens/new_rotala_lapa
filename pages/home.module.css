@@ -23,6 +23,10 @@
   background-color: #0b0b0d;
 }
 
+.container section:nth-child(4) {
+  background-color: #0b0b0d;
+}
+
 /* .container section:nth-child(4) {
   position: relative;
   z-index: 1;

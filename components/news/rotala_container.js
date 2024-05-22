@@ -12,7 +12,7 @@ const RotalaContainer = () => {
         alt="TDA ROTAĻA"
         className={styles.img}
         placeholder="blur"
-        sizes="100vw"
+        // sizes="100vw"
       />
     </section>
   );

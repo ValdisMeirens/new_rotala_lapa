@@ -36,7 +36,7 @@
 .div12 {
   -webkit-filter: brightness(70%) grayscale(100%);
   filter: brightness(70%) grayscale(100%);
-  -webkit-transition: all 200ms ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
   outline: 0;
   position: relative;
@@ -58,15 +58,6 @@
   filter: brightness(100%) grayscale(0%);
   transition: all 200ms ease-in-out;
 }
-
-/* .div6 {
-  transition: all 2s ease-in-out;
-}
-
-.div6:hover {
-  border: 1px solid #166534;
-  transition: all 200ms ease-in-out;
-} */
 
 .img {
   width: 100%;

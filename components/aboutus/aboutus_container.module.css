@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: green;
+  color: wheat;
+  font-size: 2vmax;
+}
+
+.textcontainer {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+.imagecontainer {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  object-position: center;
+  margin: auto;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
