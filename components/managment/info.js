@@ -44,8 +44,6 @@ const Info = (props) => {
             splitted[2] = splitted[2].replace(")", "");
             splitted[3] = "0.999)";
             refItem.current.style.backgroundColor = splitted.join(",");
-            console.log(splitted);
-            console.log(splitted.join(","));
           }
         } else {
           refPerson.current.style.transform = "matrix(1, 0, 0, 1, 0, 0)";

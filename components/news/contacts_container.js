@@ -23,7 +23,7 @@ const ContactsContainer = () => {
       <motion.div
         initial={{ x: "-30vw" }}
         whileInView={{ x: "0vw" }}
-        transition={{ duration: 0.75, type: "tween", delay: 0.2 }}
+        transition={{ duration: 0.75, type: "tween", delay: 0.1 }}
         viewport={{ once: true }}
         className={styles.text_container}
       >
@@ -67,7 +67,7 @@ const ContactsContainer = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, type: "tween", delay: 0.2 }}
+          transition={{ duration: 1, type: "tween", delay: 0.1 }}
           viewport={{ once: true }}
           className={styles.infocontainer}
         >
@@ -80,7 +80,7 @@ const ContactsContainer = () => {
         <motion.div
           initial={{ x: "30vw" }}
           whileInView={{ x: "0vw" }}
-          transition={{ duration: 1, type: "tween", delay: 0.2 }}
+          transition={{ duration: 1, type: "tween", delay: 0.1 }}
           viewport={{ once: true }}
           className={styles.social_container_motion}
         >
