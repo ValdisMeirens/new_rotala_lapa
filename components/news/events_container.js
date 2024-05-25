@@ -159,7 +159,7 @@ const EventContainer = ({ calendar }) => {
   });
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} onClick={closeHandler}>
       <h1 className={styles.heading}>KALENDĀRS</h1>
       <div className={styles.eventscontainer}>{calendar_array}</div>
       <AnimatePresence>
@@ -169,7 +169,7 @@ const EventContainer = ({ calendar }) => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.5, type: "spring" }}
+            transition={{ duration: 0.4, type: "spring" }}
           >
             <div className={styles.image_container}>
               <Image
@@ -177,6 +177,7 @@ const EventContainer = ({ calendar }) => {
                 fill
                 className={styles.img_overlay}
                 alt={altText}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className={styles.text_container}>

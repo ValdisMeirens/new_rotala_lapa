@@ -26,17 +26,6 @@ const Nav = () => {
     setShowOverLay(!showOverLay);
   };
 
-  // useEffect(() => {
-  //   if (showOverLay) {
-  //     document.body.style.overflow = "hidden !important";
-  //   } else {
-  //     document.body.style.overflow = "visible";
-  //   }
-  //   return () => {
-  //     document.body.style.overflow = "visible";
-  //   };
-  // }, [showOverLay]);
-
   return (
     <>
       <div className={styles.desktop_container}>

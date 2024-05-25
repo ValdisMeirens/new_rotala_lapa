@@ -69,7 +69,8 @@
   background-color: black;
   flex-direction: column;
   height: 100vh;
-  /* height: calc(var(--vh, 1vh) * 100); */
+  min-height: 800px;
+  overflow: hidden;
 }
 
 .logocontainer {
@@ -161,5 +162,11 @@
   .mobile_container,
   .navtextcontainer {
     display: flex;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .overlaycontainer {
+    min-height: 0px;
   }
 }

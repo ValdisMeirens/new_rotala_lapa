@@ -203,6 +203,9 @@
 }
 
 @media all and (max-width: 768px) {
+  .container {
+    position: relative;
+  }
   .eventscontainer {
     grid-template-columns: 1fr;
   }
@@ -213,7 +216,9 @@
   }
   .click_container {
     flex-direction: column-reverse;
-    height: 120%;
+    height: 75%;
+    position: absolute;
+    top: 17.5%;
   }
 
   .text_container {

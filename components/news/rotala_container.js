@@ -13,7 +13,6 @@ const RotalaContainer = () => {
         className={styles.img}
         placeholder="blur"
         sizes="100vw"
-        quality={90}
       />
     </section>
   );
