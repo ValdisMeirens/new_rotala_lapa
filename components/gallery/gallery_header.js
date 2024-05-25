@@ -15,7 +15,7 @@ import div11 from "../../public/logo_container/div11.jpg";
 import div12 from "../../public/logo_container/div12.jpg";
 import Nav from "../nav/nav";
 
-const AboutUsHeader = () => {
+const GalleryHeader = () => {
   return (
     <section className={styles.container}>
       <div className={styles.navcontainer}>
@@ -129,4 +129,4 @@ const AboutUsHeader = () => {
   );
 };
 
-export default AboutUsHeader;
+export default GalleryHeader;

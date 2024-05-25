@@ -9,7 +9,13 @@ const GalleryContainer = ({ data }) => {
 
     return (
       <section className={styles.container} key={item.id}>
-        <Image src={src} fill className={styles.img} alt={item.name} />
+        <Image
+          src={src}
+          fill
+          className={styles.img}
+          alt={item.name}
+          sizes="100vw"
+        />
         <Link href={`/galerija/albums/${item.id}`}>
           <div className={styles.text_container}>
             <motion.div

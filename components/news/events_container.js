@@ -17,6 +17,7 @@ const EventContainer = ({ calendar }) => {
   const [longText, setLongText] = useState("");
   const [date, setDate] = useState("");
   const [tickets, setTickets] = useState("");
+  const [place, setPlace] = useState("");
 
   const closeHandler = () => {
     if (showOverlay) {
@@ -81,6 +82,7 @@ const EventContainer = ({ calendar }) => {
     setAltText(calendar_data.k_pasakums);
     setShowOverlay(!showOverlay);
     setDate(date_string);
+    setPlace(calendar_data.k_vieta);
   };
 
   const calendar_array = calendar.map((calendar_data, index) => {
@@ -192,6 +194,7 @@ const EventContainer = ({ calendar }) => {
               </div>
               <div className={styles.titleoverlay}>{text}</div>
               <div className={styles.dateoverlay}>{date}</div>
+              <div className={styles.dateoverlay}>{place}</div>
 
               {showLongText && (
                 <div className={styles.longtextcontainer}>{longText}</div>

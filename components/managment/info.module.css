@@ -89,7 +89,7 @@
 }
 .answer {
   font-size: 0.85rem;
-  width: 85%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,6 +201,7 @@
 .arrow_left,
 .arrow_right {
   display: none;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1200px) {
@@ -293,7 +294,8 @@
   position: absolute;
   z-index: 10000;
   height: 100%;
-  width: 5%;
+  width: 40px;
+  /* border: 1px solid red; */
 }
 
 .arrow_left {
