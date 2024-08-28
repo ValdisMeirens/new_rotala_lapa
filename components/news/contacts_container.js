@@ -9,7 +9,7 @@ import facebookgrey from "../../public/contacts/fbgrey.svg";
 import instagramgrey from "../../public/contacts/instagramgrey.svg";
 import youtubegrey from "../../public/contacts/youtubegrey.svg";
 import Link from "next/link";
-import background from "@/public/contacts/dziesmusvetki_slikta.jpg";
+import background from "@/public/contacts/kopbilde.jpg";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -44,7 +44,7 @@ const ContactsContainer = () => {
           fill
           alt="TDA Rotaļa bilde"
           className={styles.img}
-          sizes="(max-width: 1100) 100vw, 75vw"
+          sizes="100vw"
           placeholder="blur"
         />
       </motion.div>

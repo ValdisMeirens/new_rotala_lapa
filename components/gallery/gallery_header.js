@@ -28,7 +28,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div2}>
@@ -37,7 +37,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div3}>
@@ -46,7 +46,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div4}>
@@ -55,7 +55,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div5}>
@@ -64,7 +64,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div6}>
@@ -76,7 +76,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div8}>
@@ -85,7 +85,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div9}>
@@ -94,7 +94,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div10}>
@@ -103,7 +103,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div11}>
@@ -112,7 +112,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
         <div className={styles.div12}>
@@ -121,7 +121,7 @@ const GalleryHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="(max-width: 900px) 35vw, 30vw"
           />
         </div>
       </div>

@@ -194,8 +194,8 @@
 .img {
   object-fit: cover;
   object-position: center;
-  border-start-end-radius: 75% 100%;
-  direction: rtl;
+  /* border-start-end-radius: 75% 100%;
+  direction: rtl; */
 }
 
 .arrow_left,

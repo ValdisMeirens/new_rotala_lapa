@@ -34,7 +34,7 @@
   text-align: center;
   flex-direction: column;
   color: #eceeff;
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   font-style: italic;
 }
 
@@ -62,7 +62,7 @@
   justify-items: center;
   flex-direction: column;
   color: #eceeff;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 200;
   text-align: left;
 }

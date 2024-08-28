@@ -2,8 +2,6 @@ import Image from "next/image";
 import styles from "./dancers_container.module.css";
 
 const DancersContainer = ({ dancers }) => {
-  console.log(dancers);
-
   const items = dancers.map((item) => {
     const src = `/dancers/${item.dejotaji_foto}`;
     let text = "";
@@ -23,7 +21,13 @@ const DancersContainer = ({ dancers }) => {
 
     return (
       <div key={item.dejotaji_id} className={styles.imagecontainer}>
-        <Image src={src} className={styles.img} fill alt={item.dejotaji_id} />
+        <Image
+          src={src}
+          className={styles.img}
+          fill
+          alt={item.dejotaji_id}
+          sizes="(max-width: 900px) 100vw, 50vw"
+        />
         <div className={styles.overlay}>
           <div className={styles.name}>
             {item.dejotaji_name} {item.dejotaji_surname}

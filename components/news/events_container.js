@@ -147,7 +147,7 @@ const EventContainer = ({ calendar }) => {
           alt={calendar_data.k_pasakums}
           fill
           className={styles.img}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
         />
         <div className={styles.datecontainer}>
           <div>{day}</div>
@@ -161,7 +161,7 @@ const EventContainer = ({ calendar }) => {
   });
 
   return (
-    <section className={styles.container} onClick={closeHandler}>
+    <section className={styles.container}>
       <h1 className={styles.heading}>KALENDĀRS</h1>
       <div className={styles.eventscontainer}>{calendar_array}</div>
       <AnimatePresence>
@@ -179,7 +179,7 @@ const EventContainer = ({ calendar }) => {
                 fill
                 className={styles.img_overlay}
                 alt={altText}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             <div className={styles.text_container}>
