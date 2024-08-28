@@ -15,10 +15,52 @@ import div10 from "../../public/logo_container/div10.jpg";
 import div11 from "../../public/logo_container/div11.jpg";
 import div12 from "../../public/logo_container/div12.jpg";
 import Nav from "../nav/nav";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import src from "../../public/events/uznemsana2.jpg";
+import close from "@/public/svg/close.svg";
 
 const LogoContainer = () => {
+  const [showOverlay, setShowOverlay] = useState(true);
+  const altText = "Uzņemšana";
+  const closeHandler = () => {
+    if (showOverlay) {
+      setShowOverlay(false);
+    }
+  };
   return (
-    <section className={styles.container}>
+    <section className={styles.container} onClick={closeHandler}>
+      <AnimatePresence>
+        {showOverlay && (
+          <motion.div
+            className={styles.click_container}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.8, type: "spring" }}
+          >
+            <div className={styles.close_container} onClick={closeHandler}>
+              <Image
+                src={close}
+                alt="Close SVG"
+                className={styles.closesvg}
+                width={50}
+                height={50}
+              />
+            </div>
+            <div className={styles.image_container} onClick={closeHandler}>
+              <Image
+                src={src}
+                fill
+                className={styles.img_overlay}
+                alt={altText}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className={styles.navcontainer}>
         <Nav />
       </div>

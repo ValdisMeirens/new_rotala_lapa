@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { Alegreya, Exo, Lato, Poppins, Raleway } from "next/font/google";
+import Head from "next/head";
 
 const roboto = Poppins({
   subsets: ["latin-ext"],
@@ -8,9 +9,14 @@ const roboto = Poppins({
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={roboto.className}>
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className={roboto.className}>
+        <Component {...pageProps} />
+      </div>
+    </>
     // <Component {...pageProps} />
   );
 }

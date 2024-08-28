@@ -1,11 +1,11 @@
-import styles from "./info.module.css";
+import styles from "./info_reverse.module.css";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import back from "@/public/svg/back.svg";
 import forward from "@/public/svg/forward.svg";
 import { motion } from "framer-motion";
 
-const Info = (props) => {
+const InfoReverse = (props) => {
   const [zIndex, setZIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const duration = 0.3;
@@ -383,6 +383,9 @@ const Info = (props) => {
             id="8"
             ref={refQ8}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 0 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q8}</p>
@@ -393,6 +396,9 @@ const Info = (props) => {
             id="7"
             ref={refQ7}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 0.3 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q7}</p>
@@ -403,6 +409,9 @@ const Info = (props) => {
             id="6"
             ref={refQ6}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 0.6 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q6}</p>
@@ -413,6 +422,9 @@ const Info = (props) => {
             id="5"
             ref={refQ5}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 0.9 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q5}</p>
@@ -423,6 +435,9 @@ const Info = (props) => {
             id="4"
             ref={refQ4}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 1.2 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q4}</p>
@@ -433,6 +448,9 @@ const Info = (props) => {
             id="3"
             ref={refQ3}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 1.5 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q3}</p>
@@ -443,6 +461,9 @@ const Info = (props) => {
             id="2"
             ref={refQ2}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 1.8 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q2}</p>
@@ -453,6 +474,9 @@ const Info = (props) => {
             id="1"
             ref={refQ1}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 2.1 }}
             viewport={{ once: true }}
           >
             <p className={styles.question}>{props.q1}</p>
@@ -463,6 +487,9 @@ const Info = (props) => {
             id="0"
             ref={refPerson}
             onClick={changeLocation}
+            // initial={{ visibility: "hidden" }}
+            // whileInView={{ visibility: "visible" }}
+            // transition={{ duration: { duration }, type: "tween", delay: 2.4 }}
             viewport={{ once: true }}
           >
             <h1 className={styles.name}>{props.name}</h1>
@@ -482,4 +509,4 @@ const Info = (props) => {
   );
 };
 
-export default Info;
+export default InfoReverse;

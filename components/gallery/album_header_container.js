@@ -52,10 +52,7 @@ const AlbumHeaderContainer = () => {
                   fill
                 />
               </div>
-              <div
-                className={styles.rimbulis_container}
-                onClick={onClickHandler}
-              >
+              <div className={styles.close_container} onClick={onClickHandler}>
                 <Image src={close} className={styles.img} alt="Rimbulis" fill />
               </div>
             </div>

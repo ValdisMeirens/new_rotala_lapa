@@ -5,11 +5,12 @@
   justify-items: center;
   align-items: center;
   height: 8vh;
-  min-height: 50px;
+  height: 100px;
   background-color: #0b0b0d;
   color: #166534;
   letter-spacing: 0.1rem;
-  padding: 1rem;
+  /* padding: 0.5rem; */
+  background-color: black;
 }
 
 .img {
@@ -20,9 +21,19 @@
 }
 
 .rimbulis_container,
+.close_container {
+  position: relative;
+  width: 8%;
+  height: 100%;
+}
+
+.close_container {
+  width: 8%;
+}
+
 .logo_container {
   position: relative;
-  width: 10%;
+  width: 15%;
   height: 100%;
 }
 
@@ -39,7 +50,6 @@
 .size {
   font-size: 1.1rem;
   text-align: center;
-  /* letter-spacing: 0.1rem; */
 }
 
 .size:hover {
@@ -54,21 +64,21 @@
 
   flex-direction: row;
   justify-content: space-between;
-  justify-items: center;
-  align-items: center;
+  /* justify-items: center; */
+  /* align-items: center; */
   height: 8vh;
-  min-height: 50px;
-  background-color: #0b0b0d;
+  min-height: 80px;
+  background-color: black;
   color: #166534;
   letter-spacing: 0.1rem;
-  padding: 1rem;
+  padding: 0rem 1rem;
 }
 
 .mobile_container_end {
   display: none;
   height: 100vh;
   flex-direction: column;
-  background-color: #0b0b0d;
+  background-color: black;
   color: #166534;
   /* letter-spacing: 0.1rem; */
 }
@@ -88,7 +98,8 @@
   transform: translate(-50%, -50%);
   width: 70%;
   z-index: 10000;
-  overflow: hidden;
+  /* overflow: hidden; */
+  min-height: 800px;
 }
 
 .text {
@@ -132,5 +143,10 @@
   .mobile_container_start,
   .mobile_container_end {
     display: flex;
+    position: relative;
+  }
+
+  .mobile_container_end {
+    min-height: 800px;
   }
 }

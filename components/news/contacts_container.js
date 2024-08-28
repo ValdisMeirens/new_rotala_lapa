@@ -9,7 +9,8 @@ import facebookgrey from "../../public/contacts/fbgrey.svg";
 import instagramgrey from "../../public/contacts/instagramgrey.svg";
 import youtubegrey from "../../public/contacts/youtubegrey.svg";
 import Link from "next/link";
-import background from "@/public/contacts/kopbilde.jpg";
+import background from "@/public/contacts/kopbilde.png";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 

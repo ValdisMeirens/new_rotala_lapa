@@ -15,6 +15,6 @@
 }
 @media all and (max-width: 480px) {
   .container section {
-    min-height: inherit;
+    min-height: 800px;
   }
 }

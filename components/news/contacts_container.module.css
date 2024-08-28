@@ -34,12 +34,12 @@
   text-align: center;
   flex-direction: column;
   color: #eceeff;
-  font-size: 2vmax;
+  font-size: 1.5rem;
   font-style: italic;
 }
 
 .rotala {
-  font-size: 1vmax;
+  font-size: 1.2rem;
   font-style: normal;
 }
 
@@ -48,11 +48,13 @@
   background-color: #166534;
   display: flex;
   color: #808184;
+  padding-top: 0.5rem;
 }
 .contact_container_2 {
   grid-area: 6 / 2 / 7 / 3;
   background-color: #166534;
   display: flex;
+  padding-top: 0.5rem;
 }
 
 .infocontainer {

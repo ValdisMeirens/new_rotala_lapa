@@ -167,6 +167,7 @@
 
 @media all and (max-width: 480px) {
   .overlaycontainer {
-    min-height: 0px;
+    min-height: 800px;
+    overflow: hidden;
   }
 }
