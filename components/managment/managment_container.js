@@ -53,7 +53,7 @@ const ManagmentContainer = () => {
         // a6="Viens tu vari daudz, bet komandā - visu!"
         // a7="Patiess no papēžiem līdz matu galiem."
         // a8="4 gadus kā minimums, 10 ir tikai sākums..."
-        name="Anta Grinvalde "
+        name="Anta Grīnvalde "
         title="TDA Rotaļa repetitore"
       />
       <Info
@@ -97,7 +97,7 @@ const ManagmentContainer = () => {
         // a6="Viens tu vari daudz, bet komandā - visu!"
         // a7="Patiess no papēžiem līdz matu galiem."
         // a8="4 gadus kā minimums, 10 ir tikai sākums..."
-        name="Valentīna Kupča"
+        name="Valentīna Popova"
         title="TDA Rotaļa koncertmeistere"
       />
       <Info
