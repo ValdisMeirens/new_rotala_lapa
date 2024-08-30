@@ -4,7 +4,7 @@ import diana from "@/public/vadiba/diana.webp";
 import anta from "@/public/vadiba/anta.webp";
 import donats from "@/public/vadiba/donats.webp";
 import valentina from "@/public/vadiba/valentina.webp";
-import vetra from "@/public/vadiba/vetra.jpg";
+import vetra from "@/public/vadiba/vetra.webp";
 
 import Info from "./info";
 import InfoReverse from "./info_reverse";

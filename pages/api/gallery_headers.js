@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   try {
     const query =
-      "SELECT id, name, image_name, place, date_time FROM gallery_header WHERE ACTIVE = 1";
+      "SELECT id, name, image_name, place, date_time FROM gallery_header WHERE ACTIVE = 1 ORDER BY date_time DESC";
     const values = [];
     const [data] = await dbconnection.execute(query, values);
     dbconnection.end();

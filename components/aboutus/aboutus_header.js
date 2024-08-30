@@ -2,17 +2,17 @@
 
 import Image from "next/image";
 import styles from "./aboutus_header.module.css";
-import div1 from "../../public/logo_container/div1.jpg";
-import div2 from "../../public/logo_container/div2.jpg";
-import div3 from "../../public/logo_container/div3.jpg";
-import div4 from "../../public/logo_container/div4.jpg";
-import div5 from "../../public/logo_container/div5.jpg";
-import div7 from "../../public/logo_container/div7.jpg";
-import div8 from "../../public/logo_container/div8.jpg";
-import div9 from "../../public/logo_container/div9.jpg";
-import div10 from "../../public/logo_container/div10.jpg";
-import div11 from "../../public/logo_container/div11.jpg";
-import div12 from "../../public/logo_container/div12.jpg";
+import div1 from "../../public/logo_container/div1.webp";
+import div2 from "../../public/logo_container/div2.webp";
+import div3 from "../../public/logo_container/div3.webp";
+import div4 from "../../public/logo_container/div4.webp";
+import div5 from "../../public/logo_container/div5.webp";
+import div7 from "../../public/logo_container/div7.webp";
+import div8 from "../../public/logo_container/div8.webp";
+import div9 from "../../public/logo_container/div9.webp";
+import div10 from "../../public/logo_container/div10.webp";
+import div11 from "../../public/logo_container/div11.webp";
+import div12 from "../../public/logo_container/div12.webp";
 import Nav from "../nav/nav";
 
 const AboutUsHeader = () => {
@@ -28,7 +28,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div2}>
@@ -37,7 +37,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div3}>
@@ -46,7 +46,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div4}>
@@ -55,7 +55,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div5}>
@@ -64,7 +64,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div6}>
@@ -76,7 +76,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div8}>
@@ -85,7 +85,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div9}>
@@ -94,7 +94,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div10}>
@@ -103,7 +103,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div11}>
@@ -112,7 +112,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
         <div className={styles.div12}>
@@ -121,7 +121,7 @@ const AboutUsHeader = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 35vw, 30vw"
+            sizes="(max-width: 900px) 75vw, 30vw"
           />
         </div>
       </div>

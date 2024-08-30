@@ -595,7 +595,7 @@ const DancersContainer = () => {
           className={styles.img}
           fill
           alt={item.dejotaji_id}
-          sizes="(max-width: 900px) 75vw, 25vw"
+          sizes="(max-width: 650px) 80vw, (max-width: 900px) 35vw, 30vw"
         />
         <div className={styles.overlay}>
           <div className={styles.name}>

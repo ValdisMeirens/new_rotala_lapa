@@ -6,7 +6,13 @@ const AboutUsContainer = () => {
   return (
     <section className={styles.container}>
       <div className={styles.imagecontainer}>
-        <Image src={valdis} fill alt="valdis" className={styles.img} />
+        <Image
+          src={valdis}
+          fill
+          alt="valdis"
+          className={styles.img}
+          sizes="50vw"
+        />
       </div>
     </section>
   );

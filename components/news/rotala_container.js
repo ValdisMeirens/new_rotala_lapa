@@ -1,6 +1,6 @@
 "use client";
 import styles from "./rotala_container.module.css";
-import background from "@/public/contacts/div4.webp";
+import background from "@/public/contacts/div4.jpg";
 import Image from "next/image";
 
 const RotalaContainer = () => {
@@ -12,8 +12,7 @@ const RotalaContainer = () => {
         alt="TDA ROTAĻA"
         className={styles.img}
         placeholder="blur"
-        sizes="100vw"
-        // fill
+        sizes="80vw"
       />
     </section>
   );
