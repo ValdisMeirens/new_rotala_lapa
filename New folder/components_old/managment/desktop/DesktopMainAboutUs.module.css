@@ -1,9 +1,0 @@
-.aboutUsContainer {
-  overflow: hidden;
-}
-
-@media all and (max-width: 750px) {
-  .aboutUsContainer {
-    display: none;
-  }
-}

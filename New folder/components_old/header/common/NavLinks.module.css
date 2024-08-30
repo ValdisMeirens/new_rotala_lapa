@@ -1,7 +1,0 @@
-.container li {
-  cursor: pointer;
-}
-
-.container li:hover {
-  color: rgb(245, 245, 245);
-}
