@@ -15,10 +15,7 @@ import div10 from "../../public/logo_container/div10.webp";
 import div11 from "../../public/logo_container/div11.webp";
 import div12 from "../../public/logo_container/div12.webp";
 import Nav from "../nav/nav";
-import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import src from "../../public/events/pievienojies.webp";
-import close from "@/public/svg/close.svg";
 
 const LogoContainer = () => {
   const [showOverlay, setShowOverlay] = useState(true);
@@ -30,7 +27,7 @@ const LogoContainer = () => {
   };
   return (
     <section className={styles.container} onClick={closeHandler}>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {showOverlay && (
           <motion.div
             className={styles.click_container}
@@ -60,7 +57,7 @@ const LogoContainer = () => {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       <div className={styles.navcontainer}>
         <Nav />
