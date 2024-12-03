@@ -24,19 +24,14 @@ import estere_cipote from "@/public/dancers/estere_cipote.webp";
 import ineta_irbe from "@/public/dancers/ineta_irbe.webp";
 import jekabs_rutkovskis from "@/public/dancers/jekabs_rutkovskis.webp";
 import karlis_baidekalns from "@/public/dancers/karlis_baidekalns.webp";
-import kate_eglite from "@/public/dancers/kate_eglite.webp";
-import katrina_zeltina from "@/public/dancers/katrina_zeltina.webp";
 import kristaps_baumanis from "@/public/dancers/kristaps_baumanis.webp";
-import kristaps_kadikis from "@/public/dancers/kristaps_kadikis.webp";
 import kristaps_kalis from "@/public/dancers/kristaps_kalis.webp";
-import kristaps_ozols from "@/public/dancers/kristaps_ozols.webp";
 import kristians_nolmanis from "@/public/dancers/kristians_nolmanis.webp";
 import laura_greiskane from "@/public/dancers/laura_greiskane.webp";
 import laura_sirmele from "@/public/dancers/laura_sirmele.webp";
 import liga_grincevica from "@/public/dancers/liga_grincevica.webp";
 import linards_graumanis from "@/public/dancers/linards_graumanis.webp";
 import liva_burmistre from "@/public/dancers/liva_burmistre.webp";
-import liva_rudzite from "@/public/dancers/liva_rudzite.webp";
 import luize_rubene from "@/public/dancers/luize_rubene.webp";
 import luize_sarsuna from "@/public/dancers/luize_sarsuna.webp";
 import luize_vitola from "@/public/dancers/luize_vitola.webp";
@@ -45,24 +40,36 @@ import maris_eglitis from "@/public/dancers/maris_eglitis.webp";
 import maris_jakabsons from "@/public/dancers/maris_jakabsons.webp";
 import marta_putne from "@/public/dancers/marta_putne.webp";
 import martins_silins from "@/public/dancers/martins_silins.webp";
-import martins_viksna from "@/public/dancers/martins_viksna.webp";
 import matiss_melderis from "@/public/dancers/matiss_melderis.webp";
 import matiss_pauls from "@/public/dancers/matiss_pauls.webp";
 import paula_paegle from "@/public/dancers/paula_paegle.webp";
 import renate_lejiete from "@/public/dancers/renate_lejiete.webp";
 import rihards_berzins from "@/public/dancers/rihards_berzins.webp";
-import rihards_prieditis from "@/public/dancers/rihards_prieditis.webp";
 import rihards_vaivods from "@/public/dancers/rihards_vaivods.webp";
 import rita_renko from "@/public/dancers/rita_renko.webp";
 import roberts_grinfelds from "@/public/dancers/roberts_grinfelds.webp";
 import ruta_berzina from "@/public/dancers/ruta_berzina.webp";
 import sanita_prese from "@/public/dancers/sanita_prese.webp";
-import santa_ozolina from "@/public/dancers/santa_ozolina.webp";
 import sintija_zubecka from "@/public/dancers/sintija_zubecka.webp";
 import svens_adviljons from "@/public/dancers/svens_adviljons.webp";
-import tomass_kalejs from "@/public/dancers/tomass_kalejs.webp";
-import valdis_meirens from "@/public/dancers/valdis_meirens.webp";
 import zermena_laupace from "@/public/dancers/zermena_laupace.webp";
+import arturs_bercenko from "@/public/dancers/arturs_bercenko.webp";
+import toms_cinitis from "@/public/dancers/arturs_bercenko.webp";
+import elina_daugule from "@/public/dancers/elina_daugule.webp";
+import niklavs_dimants from "@/public/dancers/niklavs_dimants.webp";
+import zane_holma from "@/public/dancers/zane_holma.webp";
+import zane_jasinska from "@/public/dancers/zane_jasinska.webp";
+import elina_kovalevska from "@/public/dancers/elina_kovalevska.webp";
+import kristaps_kovalevskis from "@/public/dancers/kristaps_kovalevskis.webp";
+import amanda_krastina from "@/public/dancers/amanda_krastina.webp";
+import laura_lutoka from "@/public/dancers/laura_lutoka.webp";
+import karina_olsevska from "@/public/dancers/karina_olsevska.webp";
+import evelina_orinska from "@/public/dancers/evelina_orinska.webp";
+import roberts_petersons from "@/public/dancers/roberts_petersons.webp";
+import tristans_laucis from "@/public/dancers/tristans_laucis.webp";
+import brigita_stratane from "@/public/dancers/brigita_stratane.webp";
+import gita_vaice from "@/public/dancers/gita_vaice.webp";
+import elizabete_vilne from "@/public/dancers/elizabete_vilne.webp";
 
 const DancersContainer = () => {
   const dancers2 = [
@@ -123,6 +130,14 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
+      dejotaji_id: 363,
+      dejotaji_name: "Artūrs",
+      dejotaji_surname: "Berčenko",
+      dejotaji_dz: "virs",
+      dejotaji_foto: arturs_bercenko,
+      rotalnieks: 0,
+    },
+    {
       dejotaji_id: 351,
       dejotaji_name: "Annija",
       dejotaji_surname: "Berkule",
@@ -155,6 +170,14 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
+      dejotaji_id: 373,
+      dejotaji_name: "Toms",
+      dejotaji_surname: "Cinītis-Ozoliņš",
+      dejotaji_dz: "virs",
+      dejotaji_foto: toms_cinitis,
+      rotalnieks: 0,
+    },
+    {
       dejotaji_id: 347,
       dejotaji_name: "Anna",
       dejotaji_surname: "Čudare",
@@ -163,12 +186,28 @@ const DancersContainer = () => {
       rotalnieks: 0,
     },
     {
-      dejotaji_id: 338,
-      dejotaji_name: "Kate",
-      dejotaji_surname: "Eglīte",
+      dejotaji_id: 374,
+      dejotaji_name: "Elīna Elizabete",
+      dejotaji_surname: "Daugule",
       dejotaji_dz: "siev",
-      dejotaji_foto: kate_eglite,
+      dejotaji_foto: elina_daugule,
       rotalnieks: 0,
+    },
+    {
+      dejotaji_id: 365,
+      dejotaji_name: "Niklāvs",
+      dejotaji_surname: "Dimants",
+      dejotaji_dz: "virs",
+      dejotaji_foto: niklavs_dimants,
+      rotalnieks: 0,
+    },
+    {
+      dejotaji_id: 274,
+      dejotaji_name: "Ance",
+      dejotaji_surname: "Dreijere",
+      dejotaji_dz: "siev",
+      dejotaji_foto: ance_zubere,
+      rotalnieks: 1,
     },
     {
       dejotaji_id: 97,
@@ -251,6 +290,14 @@ const DancersContainer = () => {
       rotalnieks: 0,
     },
     {
+      dejotaji_id: 369,
+      dejotaji_name: "Zane",
+      dejotaji_surname: "Holma",
+      dejotaji_dz: "siev",
+      dejotaji_foto: zane_holma,
+      rotalnieks: 0,
+    },
+    {
       dejotaji_id: 203,
       dejotaji_name: "Ineta",
       dejotaji_surname: "Irbe",
@@ -267,19 +314,11 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
-      dejotaji_id: 336,
-      dejotaji_name: "Kristaps",
-      dejotaji_surname: "Kadiķis",
-      dejotaji_dz: "virs",
-      dejotaji_foto: kristaps_kadikis,
-      rotalnieks: 0,
-    },
-    {
-      dejotaji_id: 322,
-      dejotaji_name: "Tomass",
-      dejotaji_surname: "Kalējs",
-      dejotaji_dz: "virs",
-      dejotaji_foto: tomass_kalejs,
+      dejotaji_id: 370,
+      dejotaji_name: "Zane",
+      dejotaji_surname: "Justīne Jasinska",
+      dejotaji_dz: "siev",
+      dejotaji_foto: zane_jasinska,
       rotalnieks: 0,
     },
     {
@@ -299,12 +338,36 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
+      dejotaji_id: 360,
+      dejotaji_name: "Elīna",
+      dejotaji_surname: "Kovaļevska",
+      dejotaji_dz: "siev",
+      dejotaji_foto: elina_kovalevska,
+      rotalnieks: 0,
+    },
+    {
+      dejotaji_id: 364,
+      dejotaji_name: "Kristaps",
+      dejotaji_surname: "Kovaļevskis",
+      dejotaji_dz: "virs",
+      dejotaji_foto: kristaps_kovalevskis,
+      rotalnieks: 0,
+    },
+    {
       dejotaji_id: 301,
       dejotaji_name: "Adele",
       dejotaji_surname: "Kozlovska",
       dejotaji_dz: "siev",
       dejotaji_foto: adele_kozlovska,
       rotalnieks: 1,
+    },
+    {
+      dejotaji_id: 357,
+      dejotaji_name: "Amanda",
+      dejotaji_surname: "Krastiņa",
+      dejotaji_dz: "siev",
+      dejotaji_foto: amanda_krastina,
+      rotalnieks: 0,
     },
     {
       dejotaji_id: 212,
@@ -333,9 +396,17 @@ const DancersContainer = () => {
     {
       dejotaji_id: 320,
       dejotaji_name: "Marta",
-      dejotaji_surname: "Luīze Putne",
+      dejotaji_surname: "Luīze Fīlipa",
       dejotaji_dz: "siev",
       dejotaji_foto: marta_putne,
+      rotalnieks: 0,
+    },
+    {
+      dejotaji_id: 368,
+      dejotaji_name: "Laura",
+      dejotaji_surname: "Lutoka",
+      dejotaji_dz: "siev",
+      dejotaji_foto: laura_lutoka,
       rotalnieks: 0,
     },
     {
@@ -353,14 +424,6 @@ const DancersContainer = () => {
       dejotaji_dz: "siev",
       dejotaji_foto: luize_vitola,
       rotalnieks: 0,
-    },
-    {
-      dejotaji_id: 103,
-      dejotaji_name: "Valdis",
-      dejotaji_surname: "Meirēns",
-      dejotaji_dz: "virs",
-      dejotaji_foto: valdis_meirens,
-      rotalnieks: 1,
     },
     {
       dejotaji_id: 344,
@@ -387,20 +450,20 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
-      dejotaji_id: 49,
-      dejotaji_name: "Santa",
-      dejotaji_surname: "Ozoliņa",
+      dejotaji_id: 372,
+      dejotaji_name: "Karīna",
+      dejotaji_surname: "Oļševska",
       dejotaji_dz: "siev",
-      dejotaji_foto: santa_ozolina,
-      rotalnieks: 1,
+      dejotaji_foto: karina_olsevska,
+      rotalnieks: 0,
     },
     {
-      dejotaji_id: 111,
-      dejotaji_name: "Kristaps",
-      dejotaji_surname: "Ozols",
-      dejotaji_dz: "virs",
-      dejotaji_foto: kristaps_ozols,
-      rotalnieks: 1,
+      dejotaji_id: 361,
+      dejotaji_name: "Evelīna",
+      dejotaji_surname: "Orinska",
+      dejotaji_dz: "siev",
+      dejotaji_foto: evelina_orinska,
+      rotalnieks: 0,
     },
     {
       dejotaji_id: 341,
@@ -419,19 +482,19 @@ const DancersContainer = () => {
       rotalnieks: 0,
     },
     {
+      dejotaji_id: 366,
+      dejotaji_name: "Roberts",
+      dejotaji_surname: "Pētersons",
+      dejotaji_dz: "virs",
+      dejotaji_foto: roberts_petersons,
+      rotalnieks: 0,
+    },
+    {
       dejotaji_id: 221,
       dejotaji_name: "Sanita",
       dejotaji_surname: "Prese",
       dejotaji_dz: "siev",
       dejotaji_foto: sanita_prese,
-      rotalnieks: 1,
-    },
-    {
-      dejotaji_id: 209,
-      dejotaji_name: "Rihards",
-      dejotaji_surname: "Priedītis",
-      dejotaji_dz: "virs",
-      dejotaji_foto: rihards_prieditis,
       rotalnieks: 1,
     },
     {
@@ -459,19 +522,19 @@ const DancersContainer = () => {
       rotalnieks: 0,
     },
     {
-      dejotaji_id: 53,
-      dejotaji_name: "Līva",
-      dejotaji_surname: "Rudzīte-Celmiņa",
-      dejotaji_dz: "siev",
-      dejotaji_foto: liva_rudzite,
-      rotalnieks: 1,
-    },
-    {
       dejotaji_id: 356,
       dejotaji_name: "Jēkabs",
       dejotaji_surname: "Rutkovskis",
       dejotaji_dz: "virs",
       dejotaji_foto: jekabs_rutkovskis,
+      rotalnieks: 0,
+    },
+    {
+      dejotaji_id: 371,
+      dejotaji_name: "Tristans",
+      dejotaji_surname: "Sandis Laucis",
+      dejotaji_dz: "virs",
+      dejotaji_foto: tristans_laucis,
       rotalnieks: 0,
     },
     {
@@ -499,6 +562,14 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
+      dejotaji_id: 358,
+      dejotaji_name: "Brigita",
+      dejotaji_surname: "Stratane",
+      dejotaji_dz: "siev",
+      dejotaji_foto: brigita_stratane,
+      rotalnieks: 0,
+    },
+    {
       dejotaji_id: 310,
       dejotaji_name: "Ivo",
       dejotaji_surname: "Svens Adviljons",
@@ -513,6 +584,14 @@ const DancersContainer = () => {
       dejotaji_dz: "siev",
       dejotaji_foto: elza_treimane,
       rotalnieks: 1,
+    },
+    {
+      dejotaji_id: 362,
+      dejotaji_name: "Gita",
+      dejotaji_surname: "Vaice",
+      dejotaji_dz: "siev",
+      dejotaji_foto: gita_vaice,
+      rotalnieks: 0,
     },
     {
       dejotaji_id: 315,
@@ -539,19 +618,11 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
-      dejotaji_id: 163,
-      dejotaji_name: "Mārtiņš",
-      dejotaji_surname: "Vīksna",
-      dejotaji_dz: "virs",
-      dejotaji_foto: martins_viksna,
-      rotalnieks: 1,
-    },
-    {
-      dejotaji_id: 331,
-      dejotaji_name: "Katrīna",
-      dejotaji_surname: "Zeltiņa",
+      dejotaji_id: 359,
+      dejotaji_name: "Elizabete",
+      dejotaji_surname: "Vilne",
       dejotaji_dz: "siev",
-      dejotaji_foto: katrina_zeltina,
+      dejotaji_foto: elizabete_vilne,
       rotalnieks: 0,
     },
     {
@@ -561,14 +632,6 @@ const DancersContainer = () => {
       dejotaji_dz: "siev",
       dejotaji_foto: sintija_zubecka,
       rotalnieks: 0,
-    },
-    {
-      dejotaji_id: 274,
-      dejotaji_name: "Ance",
-      dejotaji_surname: "Žubēre",
-      dejotaji_dz: "siev",
-      dejotaji_foto: ance_zubere,
-      rotalnieks: 1,
     },
   ];
   const items = dancers2.map((item) => {
