@@ -51,7 +51,7 @@ const LogoContainer = () => {
                 fill
                 className={styles.img_overlay}
                 alt={altText}
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 25vw, 25vw"
                 priority
               />
             </div>
@@ -70,7 +70,9 @@ const LogoContainer = () => {
             fill
             className={styles.img}
             placeholder="blur"
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
+            // width={1000}
+            // height={642}
           />
         </div>
         <div className={styles.div2}>
@@ -79,7 +81,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div3}>
@@ -88,7 +90,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div4}>
@@ -97,7 +99,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div5}>
@@ -106,7 +108,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="20vw"
           />
         </div>
         <div className={styles.div6}>
@@ -115,7 +117,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img_logo}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div7}>
@@ -124,7 +126,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div8}>
@@ -133,7 +135,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div9}>
@@ -142,7 +144,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div10}>
@@ -151,7 +153,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div11}>
@@ -160,7 +162,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
         <div className={styles.div12}>
@@ -169,7 +171,7 @@ const LogoContainer = () => {
             alt="Rotaļa Logo"
             fill
             className={styles.img}
-            sizes="(max-width: 900px) 75vw, 30vw"
+            sizes="(max-width: 760px) 25vw, 30vw"
           />
         </div>
       </div>

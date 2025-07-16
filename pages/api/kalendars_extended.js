@@ -11,12 +11,13 @@ export default async function handler(req, res) {
 
   try {
     const query =
-      "SELECT id, name, image_name, place, date_time FROM gallery_header WHERE ACTIVE = 1 ORDER BY id DESC";
+      "SELECT * FROM kalendars_extended WHERE status = 1 ORDER BY datums ASC";
     const values = [];
     const [data] = await dbconnection.execute(query, values);
     dbconnection.end();
     return res.json(data);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: error.message });
   }
 }

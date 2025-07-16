@@ -1,0 +1,83 @@
+.container {
+  overflow: hidden;
+  background-color: #0b0b0d;
+  color: #eceeff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry_container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  justify-items: center;
+  margin-bottom: 0.5rem;
+  height: 100px;
+  min-height: 100px;
+}
+
+.vieta,
+.datums {
+  flex: 1;
+}
+.pasakums {
+  flex: 5;
+  font-size: 1.25rem;
+}
+
+.vieta,
+.datums,
+.pasakums {
+  height: 100%;
+  background-color: #166534;
+  display: flex;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem 0.25rem 1rem 0.25rem;
+  padding: 0.25rem;
+}
+
+.heading {
+  width: 80%;
+  margin: auto;
+  font-size: 3.25rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: #166534;
+}
+
+@media all and (max-width: 900px) {
+  .entry_container {
+    flex-direction: column-reverse;
+    background-color: #166534;
+    margin: 0;
+    margin-inline: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .vieta,
+  .datums,
+  .pasakums {
+    margin: 0px;
+  }
+
+  .datums {
+    padding-bottom: 2rem;
+  }
+
+  .pasakums {
+    padding-top: 2rem;
+  }
+  .vieta,
+  .datums {
+    font-size: 0.75rem;
+  }
+}

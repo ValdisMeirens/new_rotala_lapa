@@ -1,15 +1,15 @@
-import DancersHeader from "@/components/dancers/dancers_header";
-import DancersContainer from "@/components/dancers/dancers_container";
-
-import styles from "./dancers.module.css";
+import styles from "./kalendars.module.css";
 import Footer from "@/components/footer/footer";
 import Head from "next/head";
+import AlbumHeaderContainer from "@/components/gallery/album_header_container";
+import { server } from "@/components/config/constants";
+import CalendarConteiner from "@/components/calendar/calendar_container";
 
-export default function Dancers() {
+export default function Kalendars({ data }) {
   return (
     <>
       <Head>
-        <title>Dejotāji - TDA Rotaļa</title>
+        <title>Kalendārs - TDA Rotaļa</title>
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Valdis Meirēns" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -35,21 +35,21 @@ export default function Dancers() {
         <meta property="og:url" content="https://rotala.lv/" />
       </Head>
       <div className={styles.container}>
-        <DancersHeader />
-        <DancersContainer />
+        <AlbumHeaderContainer />
+        <CalendarConteiner data={data} />
         <Footer />
       </div>
     </>
   );
 }
 
-// export async function getServerSideProps() {
-//   const res = await fetch(`${server}/api/dancers`);
-//   const data = await res.json();
+export async function getServerSideProps() {
+  const res = await fetch(`${server}/api/kalendars_extended`);
+  const data = await res.json();
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}

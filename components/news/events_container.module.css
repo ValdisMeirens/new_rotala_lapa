@@ -12,19 +12,25 @@
 .heading {
   width: 80%;
   margin: auto;
-  color: #eceeff;
   font-size: 3.25rem;
   line-height: 1;
   font-weight: 500;
   flex: 1;
   padding: 1rem;
-  color: rgba(66, 143, 18);
   color: #166534;
+}
+.heading:hover {
+  color: #eceeff;
+  scale: 1.05;
+  transition: all 0.5s;
+}
+
+.heading :hover {
 }
 
 .eventscontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
   width: 100%;
@@ -162,9 +168,13 @@
   font-weight: 500;
 }
 .ticketurloverlay {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #166534;
+}
+
+.ticketurloverlay:hover {
+  text-decoration: underline;
 }
 
 .longtextcontainer {

@@ -33,40 +33,40 @@ const EventContainer = ({ calendar }) => {
 
     switch (date.getMonth()) {
       case 0:
-        month = "Janvāris";
+        month = "janvāris";
         break;
       case 1:
-        month = "Februāris";
+        month = "februāris";
         break;
       case 2:
-        month = "Marts";
+        month = "marts";
         break;
       case 3:
-        month = "Aprīlis";
+        month = "aprīlis";
         break;
       case 4:
-        month = "Maijs";
+        month = "maijs";
         break;
       case 5:
-        month = "Jūnijs";
+        month = "jūnijs";
         break;
       case 6:
-        month = "Jūlijs";
+        month = "jūlijs";
         break;
       case 7:
-        month = "Augusts";
+        month = "augusts";
         break;
       case 8:
-        month = "Septembris";
+        month = "septembris";
         break;
       case 9:
-        month = "Oktobris";
+        month = "oktobris";
         break;
       case 10:
-        month = "Novembris";
+        month = "novembris";
         break;
       case 11:
-        month = "Decembris";
+        month = "decembris";
         break;
     }
 
@@ -147,7 +147,7 @@ const EventContainer = ({ calendar }) => {
           alt={calendar_data.k_pasakums}
           fill
           className={styles.img}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 70vw"
         />
         <div className={styles.datecontainer}>
           <div>{day}</div>
@@ -162,7 +162,9 @@ const EventContainer = ({ calendar }) => {
 
   return (
     <section className={styles.container}>
-      <h1 className={styles.heading}>KALENDĀRS</h1>
+      <h1 className={styles.heading}>
+        <Link href={`/kalendars/`}>KALENDĀRS</Link>
+      </h1>
       <div className={styles.eventscontainer}>{calendar_array}</div>
       <AnimatePresence>
         {showOverlay && (
@@ -179,7 +181,7 @@ const EventContainer = ({ calendar }) => {
                 fill
                 className={styles.img_overlay}
                 alt={altText}
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="100vw"
               />
             </div>
             <div className={styles.text_container}>
@@ -196,9 +198,8 @@ const EventContainer = ({ calendar }) => {
               <div className={styles.dateoverlay}>{date}</div>
               <div className={styles.dateoverlay}>{place}</div>
 
-              {showLongText && (
-                <div className={styles.longtextcontainer}>{longText}</div>
-              )}
+              <div className={styles.longtextcontainer}>{longText}</div>
+
               {!showLongText && (
                 <div className={styles.ticketurloverlay}>
                   <Link href={tickets} target="_blank">

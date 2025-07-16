@@ -14,9 +14,11 @@
 }
 
 .textcontainer {
-  width: 80%;
+  width: 60%;
   margin: auto;
   justify-content: center;
+  padding: 50px 0;
+  color: #eceeff;
 }
 .imagecontainer {
   position: relative;
@@ -32,3 +34,10 @@
   object-fit: contain;
   object-position: center;
 }
+
+
+@media all and (max-width: 768px) {
+.textcontainer {
+  width: 90%;
+
+}}

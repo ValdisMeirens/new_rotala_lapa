@@ -45,7 +45,7 @@ const ContactsContainer = () => {
           fill
           alt="TDA Rotaļa bilde"
           className={styles.img}
-          sizes="100vw"
+          sizes="75vw"
           placeholder="blur"
         />
       </motion.div>
@@ -97,7 +97,7 @@ const ContactsContainer = () => {
               onMouseOver={(e) => setInstragramSrc(instagramgrey)}
               onMouseLeave={(e) => setInstragramSrc(instagram)}
               className={styles.img_s}
-              sizes="25vw"
+              sizes="10vw"
             />
           </Link>
           <Link
@@ -112,7 +112,7 @@ const ContactsContainer = () => {
               onMouseOver={(e) => setFBSrc(facebookgrey)}
               onMouseLeave={(e) => setFBSrc(facebook)}
               className={styles.img_s}
-              sizes="25vw"
+              sizes="10vw"
             />
           </Link>
           <Link
@@ -127,7 +127,7 @@ const ContactsContainer = () => {
               onMouseOver={(e) => setYoutubeSrc(youtubegrey)}
               onMouseLeave={(e) => setYoutubeSrc(youtube)}
               className={styles.img_s}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              sizes="10vw"
             />
           </Link>
         </motion.div>

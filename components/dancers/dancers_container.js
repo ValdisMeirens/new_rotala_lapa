@@ -20,6 +20,8 @@ import edvards_selikovs from "@/public/dancers/edvards_selikovs.webp";
 import elza_treimane from "@/public/dancers/elza_treimane.webp";
 import emilija_vaitkevica from "@/public/dancers/emilija_vaitkevica.webp";
 import ernests_riekstins from "@/public/dancers/ernests_riekstins.webp";
+import eleonora_rieksta from "@/public/dancers/eleonora_rieksta.webp";
+
 import estere_cipote from "@/public/dancers/estere_cipote.webp";
 import ineta_irbe from "@/public/dancers/ineta_irbe.webp";
 import jekabs_rutkovskis from "@/public/dancers/jekabs_rutkovskis.webp";
@@ -54,17 +56,14 @@ import sintija_zubecka from "@/public/dancers/sintija_zubecka.webp";
 import svens_adviljons from "@/public/dancers/svens_adviljons.webp";
 import zermena_laupace from "@/public/dancers/zermena_laupace.webp";
 import arturs_bercenko from "@/public/dancers/arturs_bercenko.webp";
-import toms_cinitis from "@/public/dancers/arturs_bercenko.webp";
-import elina_daugule from "@/public/dancers/elina_daugule.webp";
+import toms_cinitis from "@/public/dancers/toms_cinitis.webp";
 import niklavs_dimants from "@/public/dancers/niklavs_dimants.webp";
 import zane_holma from "@/public/dancers/zane_holma.webp";
 import zane_jasinska from "@/public/dancers/zane_jasinska.webp";
 import elina_kovalevska from "@/public/dancers/elina_kovalevska.webp";
 import kristaps_kovalevskis from "@/public/dancers/kristaps_kovalevskis.webp";
-import amanda_krastina from "@/public/dancers/amanda_krastina.webp";
 import laura_lutoka from "@/public/dancers/laura_lutoka.webp";
 import karina_olsevska from "@/public/dancers/karina_olsevska.webp";
-import evelina_orinska from "@/public/dancers/evelina_orinska.webp";
 import roberts_petersons from "@/public/dancers/roberts_petersons.webp";
 import tristans_laucis from "@/public/dancers/tristans_laucis.webp";
 import brigita_stratane from "@/public/dancers/brigita_stratane.webp";
@@ -97,14 +96,14 @@ const DancersContainer = () => {
       dejotaji_foto: annija_barbale,
       rotalnieks: 0,
     },
-    {
-      dejotaji_id: 342,
-      dejotaji_name: "Artis",
-      dejotaji_surname: "Batalovs",
-      dejotaji_dz: "virs",
-      dejotaji_foto: artis_batalovs,
-      rotalnieks: 0,
-    },
+    // {
+    //   dejotaji_id: 342,
+    //   dejotaji_name: "Artis",
+    //   dejotaji_surname: "Batalovs",
+    //   dejotaji_dz: "virs",
+    //   dejotaji_foto: artis_batalovs,
+    //   rotalnieks: 0,
+    // },
     {
       dejotaji_id: 316,
       dejotaji_name: "Agate",
@@ -183,14 +182,6 @@ const DancersContainer = () => {
       dejotaji_surname: "Čudare",
       dejotaji_dz: "siev",
       dejotaji_foto: anna_cudure,
-      rotalnieks: 0,
-    },
-    {
-      dejotaji_id: 374,
-      dejotaji_name: "Elīna Elizabete",
-      dejotaji_surname: "Daugule",
-      dejotaji_dz: "siev",
-      dejotaji_foto: elina_daugule,
       rotalnieks: 0,
     },
     {
@@ -362,14 +353,6 @@ const DancersContainer = () => {
       rotalnieks: 1,
     },
     {
-      dejotaji_id: 357,
-      dejotaji_name: "Amanda",
-      dejotaji_surname: "Krastiņa",
-      dejotaji_dz: "siev",
-      dejotaji_foto: amanda_krastina,
-      rotalnieks: 0,
-    },
-    {
       dejotaji_id: 212,
       dejotaji_name: "Žermēna",
       dejotaji_surname: "Laupace",
@@ -458,14 +441,6 @@ const DancersContainer = () => {
       rotalnieks: 0,
     },
     {
-      dejotaji_id: 361,
-      dejotaji_name: "Evelīna",
-      dejotaji_surname: "Orinska",
-      dejotaji_dz: "siev",
-      dejotaji_foto: evelina_orinska,
-      rotalnieks: 0,
-    },
-    {
       dejotaji_id: 341,
       dejotaji_name: "Paula",
       dejotaji_surname: "Paegle",
@@ -511,6 +486,14 @@ const DancersContainer = () => {
       dejotaji_surname: "Riekstiņš",
       dejotaji_dz: "virs",
       dejotaji_foto: ernests_riekstins,
+      rotalnieks: 0,
+    },
+    {
+      dejotaji_id: 500,
+      dejotaji_name: "Eleonora",
+      dejotaji_surname: "Rieksta",
+      dejotaji_dz: "siev",
+      dejotaji_foto: eleonora_rieksta,
       rotalnieks: 0,
     },
     {
@@ -658,7 +641,7 @@ const DancersContainer = () => {
           className={styles.img}
           fill
           alt={item.dejotaji_id}
-          sizes="(max-width: 650px) 80vw, (max-width: 900px) 35vw, 30vw"
+          sizes="(max-width: 650px) 100vw, (max-width: 900px) 35vw, 25vw"
         />
         <div className={styles.overlay}>
           <div className={styles.name}>

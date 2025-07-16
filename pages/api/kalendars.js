@@ -42,7 +42,7 @@ export default async function handler(req, res) {
 
   try {
     const query =
-      "SELECT * FROM kalendars WHERE k_status = 'on' and k_datums >= SYSDATE() order by k_datums ASC LIMIT 6";
+      "SELECT * FROM kalendars WHERE k_status = 'on' and k_datums >= SYSDATE() order by k_datums ASC LIMIT 4";
     const values = [];
     const [data] = await dbconnection.execute(query, values);
     dbconnection.end();

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import rimbulis from "../../public/nav/rimbulis.png";
+import rimbulis from "../../public/nav/rimbulis.webp";
 import close from "../../public/svg/close-svgrepo-com.svg";
 
 import rotala from "../../public/nav/rotala_logo.png";
@@ -36,7 +36,7 @@ const Nav = () => {
               alt="Rotaļas Logo"
               fill
               className={styles.rotala}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              sizes="10vw"
             />
           </Link>
         </div>
@@ -49,7 +49,7 @@ const Nav = () => {
             alt="rimbulis"
             fill
             className={styles.rimbulis}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            sizes="10vw"
           />
         </div>
       </div>
@@ -63,6 +63,7 @@ const Nav = () => {
                 alt="Rotaļas Logo"
                 fill
                 className={styles.rotala}
+                sizes="10vw"
               />
             </Link>
           </div>
@@ -73,6 +74,7 @@ const Nav = () => {
               alt="rimbulis"
               fill
               className={styles.rimbulis}
+              sizes="10vw"
             />
           </div>
         </div>
@@ -87,6 +89,7 @@ const Nav = () => {
                 alt="Rotaļas Logo"
                 fill
                 className={styles.img}
+                sizes="10vw"
               />
             </div>
             <div className={styles.closecontainer} onClick={onClickHandler}>
@@ -125,7 +128,7 @@ const Nav = () => {
                 alt="Instagram"
                 fill
                 className={styles.img}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                sizes="10vw"
               />
             </Link>
             <Link
@@ -138,7 +141,7 @@ const Nav = () => {
                 alt="Facebook"
                 fill
                 className={styles.img}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                sizes="10vw"
               />
             </Link>
             <Link
@@ -151,7 +154,7 @@ const Nav = () => {
                 alt="youtube"
                 fill
                 className={styles.img}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                sizes="10vw"
               />
             </Link>
           </div>
