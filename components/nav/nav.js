@@ -116,6 +116,9 @@ const Nav = () => {
             <Link href="/par_mums" className={styles.size}>
               PAR MUMS
             </Link>
+            <Link href="/parotalasimies" className={styles.size}>
+              <li>PAROTAĻĀSIMIES</li>
+            </Link>
           </div>
           <div className={styles.socialnetworkcontainer}>
             <Link
@@ -178,6 +181,9 @@ const Nav = () => {
             </Link>
             <Link href="/par_mums" className={styles.link}>
               <li>PAR MUMS</li>
+            </Link>
+            <Link href="/parotalasimies" className={styles.link}>
+              <li>PAROTAĻĀSIMIES</li>
             </Link>
           </ul>
         </nav>

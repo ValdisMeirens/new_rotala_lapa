@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #0b0b0d;
+  color: #166534;
+  min-height: 800px;
+}
+
+.textcontainer {
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  padding: 50px 0;
+  color: #eceeff;
+}
+.imagecontainer {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+@media all and (max-width: 768px) {
+.textcontainer {
+  width: 90%;
+
+}}

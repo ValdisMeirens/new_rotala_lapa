@@ -72,6 +72,9 @@ const AlbumHeaderContainer = () => {
               <Link href="/par_mums" className={styles.text}>
                 PAR MUMS
               </Link>
+              <Link href="/par_mums" className={styles.text}>
+                PAROTAĻĀSIMIES
+              </Link>
             </div>
             <div className={styles.socialnetworkcontainer}>
               <Link
@@ -143,6 +146,9 @@ const AlbumHeaderContainer = () => {
           </Link>
           <Link href="/par_mums" className={styles.size}>
             PAR MUMS
+          </Link>
+          <Link href="/par_mums" className={styles.size}>
+            PAROTAĻĀSIMIES
           </Link>
         </div>
         <div className={styles.rimbulis_container}>
