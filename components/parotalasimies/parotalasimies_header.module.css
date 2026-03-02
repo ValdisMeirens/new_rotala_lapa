@@ -73,7 +73,7 @@
 
 .title {
   color: #eceeff;
-  font-size: 1.5rem;
+  font-size: 2.5vmax;
 }
 
 .div1 {
@@ -121,7 +121,7 @@
 
 @media all and (max-width: 768px) {
   .title {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .gridcontainer {
     grid-column-gap: 0.4rem;

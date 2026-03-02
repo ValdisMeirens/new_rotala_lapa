@@ -21,7 +21,7 @@ export default function QAAccordion({ items }) {
   }, [openIndex]);
 
   return (
-    <div className={styles.qa_container}>
+    <div className={styles.qa_container} id="questions">
       {items.map((item, index) => {
         const isOpen = openIndex === index;
         return (

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./logo_container.module.css";
 import div1 from "../../public/logo_container/div1.webp";
 import div2 from "../../public/logo_container/div2.webp";
@@ -16,6 +17,11 @@ import div11 from "../../public/logo_container/div11.webp";
 import div12 from "../../public/logo_container/div12.webp";
 import Nav from "../nav/nav";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import uznemsanadesktop from "../../public/uznemsana/Uznemsanapopupdesktop.png";
+import uznemsanamobile from "../../public/uznemsana/Uznemsanapopupmobile.png";
+import useMediaQuery from "./useMediaQuery";
+import close from "@/public/svg/close.svg";
 
 const LogoContainer = () => {
   const [showOverlay, setShowOverlay] = useState(true);
@@ -25,6 +31,12 @@ const LogoContainer = () => {
       setShowOverlay(false);
     }
   };
+
+  const isMobile = useMediaQuery("(max-width: 1024px)");
+
+  let imgSrc = uznemsanadesktop;
+  if (isMobile) imgSrc = uznemsanamobile;
+
   return (
     <section className={styles.container} onClick={closeHandler}>
       {/* <AnimatePresence>
@@ -34,7 +46,7 @@ const LogoContainer = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.2, type: "spring" }}
+            transition={{ duration: 0.8, type: "spring" }}
           >
             <div className={styles.close_container} onClick={closeHandler}>
               <Image
@@ -46,14 +58,17 @@ const LogoContainer = () => {
               />
             </div>
             <div className={styles.image_container} onClick={closeHandler}>
+              <Link href="/parotalasimies#questions">
               <Image
-                src={src}
-                fill
+                src={imgSrc}
                 className={styles.img_overlay}
                 alt={altText}
-                sizes="(max-width: 768px) 25vw, 25vw"
+                sizes="100vw"
                 priority
+                quality={100}
+
               />
+              </Link>
             </div>
           </motion.div>
         )}

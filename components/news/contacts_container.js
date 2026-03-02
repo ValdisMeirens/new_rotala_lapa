@@ -72,9 +72,9 @@ const ContactsContainer = () => {
           viewport={{ once: true }}
           className={styles.infocontainer}
         >
-          <div className={styles.name}>Linards Graumanis</div>
-          <div className={styles.title}>TDA &quot;Rotaļa&quot; prezidents</div>
-          <div className={styles.email}>linardsgraumanis@gmail.com</div>
+          <div className={styles.name}>Elza Naglinska</div>
+          <div className={styles.title}>TDA &quot;Rotaļa&quot; prezidente</div>
+          <div className={styles.email}>elza.treimane@gmail.com</div>
         </motion.div>
       </div>
       <div className={styles.social_container}>
