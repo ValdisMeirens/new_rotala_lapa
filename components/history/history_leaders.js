@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import styles from "./history_leaders.module.css";
 
 const leaders = [
@@ -44,7 +44,6 @@ const leaders = [
       "Diāna ir Rotaļniece kopš 2012. gada, bet no 2019. gada – Rotaļas mākslinieciskā vadītāja, ansambļa dvēsele un mūžīgais dzinējs, kas liek traukties uz priekšu ne vien Rotaļniekiem, bet arī visiem apkārtējiem.",
       "Rotaļai ir ļoti paveicies, jo Diāna ir talantīga horeogrāfe, kuras radītās dejas jau vairākkārt augsti novērtētas jaunrades deju konkursos, kā arī iekļautas lielu deju notikumu repertuāros.",
       "Diāna ar savu entuziasmu “aplipina” visus blakus esošos, mudina DARĪT un IZDARĪT līdz galam un būt čakliem darbu darītājiem.",
-      "Kopā ar Santu Irbi iemācījusi Rotaļniekiem lielāku uzmanību pievērst savai fiziskajai sagatavotībai.",
     ],
   },
 ];
@@ -55,6 +54,27 @@ const people = [
   "Valentīna Popova – koncertmeistare, ar savu muzikālo izjūtu palīdz Rotaļniekiem sajust ritmu un dejas noskaņu, kā arī katrā mēģinājumā liek sajusties kā klavierkoncertā.",
 ];
 
+const renderLeaderDetails = (leader, className) => (
+  <article className={className}>
+    <div className={styles.detailsMeta}>{leader.years}</div>
+    <h2>{leader.name}</h2>
+    <p className={styles.intro}>{leader.intro}</p>
+    {leader.paragraphs.map((paragraph) => (
+      <p key={paragraph}>{paragraph}</p>
+    ))}
+    {leader.name === leaders[2].name && (
+      <div className={styles.people}>
+        <h3>Komanda</h3>
+        <div className={styles.peopleGrid}>
+          {people.map((person) => (
+            <p key={person}>{person}</p>
+          ))}
+        </div>
+      </div>
+    )}
+  </article>
+);
+
 const HistoryLeaders = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const selectedLeader = leaders[selectedIndex];
@@ -64,43 +84,59 @@ const HistoryLeaders = () => {
       <div className={styles.content}>
         <h1 className={styles.heading}>VADĪTĀJI</h1>
 
+        <div className={styles.earlyLeaders}>
+          <div className={styles.earlyYears}>1946.–1977. gads</div>
+          <p>
+            It visam pasaulē ir sākums, TDA “Rotaļa” sākums meklējams 1946.
+            gadā, kad par ansambļa pirmo vadītāju kļuva Ludmila Krūmiņa. Pēcāk
+            vadības grožus kādu laiku turēja arī Gaļina Libere, kā arī Dace
+            Ašmane.
+          </p>
+        </div>
+
         <div className={styles.leaders}>
           {leaders.map((leader, index) => {
             const isActive = index === selectedIndex;
 
             return (
-              <button
-                className={`${styles.leaderButton} ${
-                  isActive ? styles.activeLeader : ""
-                }`}
-                key={leader.name}
-                onClick={() => setSelectedIndex(index)}
-                type="button"
-              >
-                <span className={styles.imageFrame}>
-                  {leader.image ? (
-                    <Image
-                      src={leader.image}
-                      alt={leader.name}
-                      fill
-                      className={styles.image}
-                      style={{ objectPosition: leader.imagePosition }}
-                      sizes="(max-width: 768px) 80vw, 26vw"
-                    />
-                  ) : (
-                    <span className={styles.placeholder}>
-                      <span>{leader.initials}</span>
-                    </span>
+              <Fragment key={leader.name}>
+                <button
+                  className={`${styles.leaderButton} ${
+                    isActive ? styles.activeLeader : ""
+                  }`}
+                  onClick={() => setSelectedIndex(index)}
+                  type="button"
+                >
+                  <span className={styles.imageFrame}>
+                    {leader.image ? (
+                      <Image
+                        src={leader.image}
+                        alt={leader.name}
+                        fill
+                        className={styles.image}
+                        style={{ objectPosition: leader.imagePosition }}
+                        sizes="(max-width: 768px) 80vw, 26vw"
+                      />
+                    ) : (
+                      <span className={styles.placeholder}>
+                        <span>{leader.initials}</span>
+                      </span>
+                    )}
+                  </span>
+                  <span className={styles.cardName}>{leader.name}</span>
+                  <span className={styles.cardYears}>{leader.years}</span>
+                </button>
+                {isActive &&
+                  renderLeaderDetails(
+                    leader,
+                    `${styles.details} ${styles.mobileDetails}`,
                   )}
-                </span>
-                <span className={styles.cardName}>{leader.name}</span>
-                <span className={styles.cardYears}>{leader.years}</span>
-              </button>
+              </Fragment>
             );
           })}
         </div>
 
-        <article className={styles.details}>
+        <article className={`${styles.details} ${styles.desktopDetails}`}>
           <div className={styles.detailsMeta}>{selectedLeader.years}</div>
           <h2>{selectedLeader.name}</h2>
           <p className={styles.intro}>{selectedLeader.intro}</p>
@@ -109,7 +145,7 @@ const HistoryLeaders = () => {
           ))}
           {selectedLeader.name === "Diāna Gavare" && (
             <div className={styles.people}>
-              <h3>Komanda un nozīmīgi cilvēki</h3>
+              <h3>Komanda</h3>
               <div className={styles.peopleGrid}>
                 {people.map((person) => (
                   <p key={person}>{person}</p>

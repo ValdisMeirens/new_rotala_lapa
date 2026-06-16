@@ -11,7 +11,6 @@ import annija_berkule from "@/public/dancers/annija_berkule.webp";
 import annija_vaivode from "@/public/dancers/annija_vaivode.webp";
 import armands_grinbergs from "@/public/dancers/armands_grinbergs.webp";
 import asnate_moiseja from "@/public/dancers/asnate_moiseja.webp";
-// import edvards_selikovs from "@/public/dancers/edvards_selikovs.webp";
 import elza_treimane from "@/public/dancers/elza_treimane.webp";
 import emilija_vaitkevica from "@/public/dancers/emilija_vaitkevica.webp";
 import ernests_riekstins from "@/public/dancers/ernests_riekstins.webp";
@@ -45,7 +44,6 @@ import ruta_berzina from "@/public/dancers/ruta_berzina.webp";
 import sanita_prese from "@/public/dancers/sanita_prese.webp";
 import svens_adviljons from "@/public/dancers/svens_adviljons.webp";
 import arturs_bercenko from "@/public/dancers/arturs_bercenko.webp";
-// import niklavs_dimants from "@/public/dancers/niklavs_dimants.webp";
 import zane_holma from "@/public/dancers/zane_holma.webp";
 import zane_jasinska from "@/public/dancers/zane_jasinska.webp";
 import elina_kovalevska from "@/public/dancers/elina_kovalevska.webp";
@@ -56,7 +54,6 @@ import roberts_petersons from "@/public/dancers/roberts_petersons.webp";
 import tristans_laucis from "@/public/dancers/tristans_laucis.webp";
 import brigita_stratane from "@/public/dancers/brigita_stratane.webp";
 import gita_vaice from "@/public/dancers/gita_vaice.webp";
-// import elizabete_vilne from "@/public/dancers/elizabete_vilne.webp";
 import adrians_gutsmits from "@/public/dancers/adrians_gutsmits.webp";
 import alise_jurasevska from "@/public/dancers/alise_jurasevska.webp";
 import ance_mezaka from "@/public/dancers/ance_mezaka.webp";
@@ -167,14 +164,6 @@ const DancersContainer = () => {
       dejotaji_foto: emilija_cudare,
       rotalnieks: 0,
     },
-    // {
-    //   dejotaji_id: 365,
-    //   dejotaji_name: "Niklāvs",
-    //   dejotaji_surname: "Dimants",
-    //   dejotaji_dz: "virs",
-    //   dejotaji_foto: niklavs_dimants,
-    //   rotalnieks: 0,
-    // },
     {
       dejotaji_id: 97,
       dejotaji_name: "Māris",

@@ -10,7 +10,7 @@
 
 .container section:nth-child(n + 2) {
   height: auto;
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .container section:nth-child(1) {
@@ -19,5 +19,9 @@
 @media all and (max-width: 480px) {
   .container section {
     min-height: 800px;
+  }
+
+  .container section:nth-child(n + 2) {
+    min-height: auto;
   }
 }

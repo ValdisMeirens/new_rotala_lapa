@@ -10,7 +10,7 @@
   background-size: 8rem 8rem;
   color: #eceeff;
   min-height: 100vh;
-  padding: 5rem 0 6rem;
+  padding: 4rem 0 6rem;
   overflow: hidden;
 }
 
@@ -74,14 +74,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border: 3px solid #0b0b0d;
   border-radius: 50%;
   background-color: #166534;
   box-shadow: 0 0 0 1px #166534;
   transform: translate(-50%, -50%);
+  transition: background-color 180ms ease, box-shadow 180ms ease;
   z-index: 2;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background-color: #eceeff;
 }
 
 .card {
@@ -121,6 +130,12 @@
   transform: translateX(-50%) rotate(0deg) translateY(0.25rem);
 }
 
+.item:has(.card:hover) .dot,
+.item:hover .dot {
+  background-color: #00b22e;
+  box-shadow: 0 0 0 1px #00b22e, 0 0 24px rgba(0, 178, 46, 0.72);
+}
+
 .year {
   color: #166534;
   font-size: 0.9rem;
@@ -150,7 +165,7 @@
 
 @media all and (max-width: 1240px) {
   .container {
-    padding: 4rem 0 5rem;
+    padding: 2rem 0 5rem;
   }
 
   .content {
@@ -169,21 +184,23 @@
   }
 
   .note {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .timeline {
+    --mobile-line-x: 7px;
+    --mobile-content-offset: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     min-width: 0;
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 var(--mobile-content-offset);
   }
 
   .timeline::before {
     top: 0;
     bottom: 0;
-    left: 7px;
+    left: var(--mobile-line-x);
     right: auto;
     width: 2px;
     height: auto;
@@ -196,7 +213,7 @@
 
   .dot {
     top: 1rem;
-    left: -1.55rem;
+    left: calc(var(--mobile-line-x) - var(--mobile-content-offset));
     transform: translate(-50%, 0);
   }
 

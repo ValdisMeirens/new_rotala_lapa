@@ -11,19 +11,19 @@ const competitions = [
     year: "1983",
     place: "2. vieta",
     dances: ["Plācenītis", "Trīs sidraba upes tek", "Lietuviešu deja"],
-    highlight: [],
+    highlight: ["Plācenītis", "Trīs sidraba upes tek"],
   },
   {
     year: "1985",
     place: "1. vieta",
     dances: ["Tūdaliņ’, tagadiņ’", "Dejotprieks", "Turku deja"],
-    highlight: ["Dejotprieks"],
+    highlight: ["Tūdaliņ’, tagadiņ’"],
   },
   {
     year: "1990",
     place: "2. vieta",
     dances: ["Gatves deja", "Dejotprieks"],
-    highlight: ["Dejotprieks"],
+    highlight: [],
   },
   {
     year: "1998",
@@ -35,7 +35,7 @@ const competitions = [
     year: "2003",
     place: "1. vieta",
     dances: ["Alsunģietis", "Virmo gaiss"],
-    highlight: ["Virmo gaiss"],
+    highlight: ["Alsunģietis"],
   },
   {
     year: "2008",
@@ -45,7 +45,11 @@ const competitions = [
       "Paēduši, padzēruši pateicamies Dieviņam",
       "Tu kā, es kā",
     ],
-    highlight: ["Kur tu augi, daiļa meita"],
+    highlight: [
+      "Kur tu augi, daiļa meita",
+      "Paēduši, padzēruši pateicamies Dieviņam",
+      "Tu kā, es kā",
+    ],
   },
   {
     year: "2013",
@@ -57,7 +61,7 @@ const competitions = [
     year: "2023",
     place: "3. vieta",
     dances: ["Es tev došu skaistu sētu", "Daugaviņa", "Tūdaliņ’, tagadiņ’"],
-    highlight: ["Es tev došu skaistu sētu"],
+    highlight: ["Es tev došu skaistu sētu", "Daugaviņa", "Tūdaliņ’, tagadiņ’"],
   },
 ];
 

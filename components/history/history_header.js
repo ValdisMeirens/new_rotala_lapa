@@ -2,17 +2,17 @@
 
 import Image from "next/image";
 import styles from "./history_header.module.css";
-import div1 from "../../public/logo_container/div1.webp";
-import div2 from "../../public/logo_container/div2.webp";
-import div3 from "../../public/logo_container/div3.webp";
-import div4 from "../../public/logo_container/div4.webp";
-import div5 from "../../public/logo_container/div5.webp";
-import div7 from "../../public/logo_container/div7.webp";
-import div8 from "../../public/logo_container/div8.webp";
-import div9 from "../../public/logo_container/div9.webp";
-import div10 from "../../public/logo_container/div10.webp";
-import div11 from "../../public/logo_container/div11.webp";
-import div12 from "../../public/logo_container/div12.webp";
+import div1 from "../../public/history_header/1.jpeg";
+import div2 from "../../public/history_header/2.jpeg";
+import div3 from "../../public/history_header/3.jpeg";
+import div4 from "../../public/history_header/4.jpeg";
+import div5 from "../../public/history_header/5.jpeg";
+import div7 from "../../public/history_header/7.jpeg";
+import div8 from "../../public/history_header/8.jpeg";
+import div9 from "../../public/history_header/9.jpeg";
+import div10 from "../../public/history_header/10.jpeg";
+import div11 from "../../public/history_header/11.jpeg";
+import div12 from "../../public/history_header/12.jpeg";
 import Nav from "../nav/nav";
 
 const HistoryHeader = () => {
