@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./managment_container.module.css";
 import diana from "@/public/vadiba/diana.webp";
 import anta from "@/public/vadiba/anta.webp";
 import donats from "@/public/vadiba/donats.webp";
@@ -9,118 +7,66 @@ import vetra from "@/public/vadiba/vetra.webp";
 import Info from "./info";
 import InfoReverse from "./info_reverse";
 
+const teachers = {
+  diana: [
+    "Esmu diplomēta horeogrāfe un deju skolotāja. Ikdienas darbos sastopos ar teju 200 dažādu vecumu dejotājiem. Cilvēkos novērtēju aizrautību – kad redzu viņu acis mirdzam par kaut ko svarīgu un īpašu. Man tā notiek ar deju un kustību, un ar šo degsmi gribu aplipināt visus apkārtējos.",
+    "Ķermeņa valoda man šķiet vispatiesākais izpausmes veids – tas neprot izlikties –, tāpēc mācīt cilvēkiem kustēties un dejot ir mana misija. Vēlos, lai dejā ieraugām cits citu – kā meita rūpējas par puisi, kā puisis viņu sargā.",
+    "Esmu aizrautīga deju radītāja – lai gan tas vēl, iespējams, neatspoguļojas darbu skaitā, katru deju radu ar lielu rūpību, katrai ir savs stāsts un nozīme. Iedvesmu rodu dzīves situācijās, tradīcijās, tautasdziesmās, pasakās. Uzskatu, ka dejai ir jāvēsta – kamēr neesmu atradusi vēstījumu, nevaru radīto nodot skatītājiem.",
+    "Rotaļa ir mans lielais lolojums, mana radošuma meka. Mani dejotāji ir tikpat dzīves mīloši kā es, un tā mēs viens otru spoguļojam.",
+    "Mani deju skolotāji: Sandra Liepiņa, Edmunds Veizāns, Artūrs Tabors, Gints Baumanis, Agris Daņiļevičs, Svetlana Korole, Regīna Kaupuža, Dmitrijs Gaitjukevičs un vēl, un vēl…",
+  ],
+  anta: [
+    "Esmu profesionāla horeogrāfe un dejas pasniedzēja ar bakalaura grādu horeogrāfijā un vairāku gadu pieredzi tautas dejā un klasiskās dejas pamatos. Esmu strādājusi kā interešu izglītības skolotāja, baleta pedagoģe un repetitore dažādos deju kolektīvos, veidojot horeogrāfijas un repertuāru, kā arī sagatavojot audzēkņus koncertiem un pasākumiem.",
+    "Esmu veidojusi horeogrāfijas koncertiem, skatuves projektiem un video darbiem, kā arī strādājusi radošās komandās kopā ar mūziķiem un izpildītājiem.",
+    "Savā pedagoģiskajā darbā uzsveru disciplīnu, kustību kvalitāti, muzikālo izjūtu un individuālu pieeju katram dejotājam, radot profesionālu un atbalstošu mācību vidi. Rotaļai pievienojos 2023. gadā.",
+  ],
+  donats: [
+    "Kopš 2009. gada esmu profesionāls baleta mākslinieks Latvijas Nacionālās Operas un Baleta trupā.",
+    "Esmu ieguvis bakalaura grādu horeogrāfijā Jāzepa Vītola Latvijas Mūzikas akadēmijā.",
+    "Paralēli klasiskajai dejai kopš 2013. gada darbojos kontaktimprovizācijā (contact improvization). Esmu piedalījies vairākos semināros un vadījis daudzas klases Contact Improvisation Latvia organizācijas projektu ietvaros un ne tikai.",
+    "Esmu Rotaļas repetitors kopš 2021. gada. Īpaši piestrādāju pie Rotaļnieku klasiskās dejas tehnikas, lai kustības ir plašas un izteiksmīgas un ķermenis – vingrs un koordinēts.",
+  ],
+  valentina: [
+    "Bērnībā sapņoju arī par baletu, bet dzīves ceļi aizveda klaviermūzikas virzienā. Pirms sāku spēlēt dejotājiem, strādāju mūzikas skolā par klavierspēles pedagoģi. Biju koncertmeistare vairākiem koru kolektīviem.",
+    "Mana pirmā satikšanās ar Rotaļu bija 1986. gadā, kad sāku strādāt Zelta Sietiņā. Sadarbība ar Rotaļu sākās 2005. gadā pēc Ginta Baumaņa uzaicinājuma. Spēlējot Rotaļniekiem, jūtos tā, it kā dejotu kopā ar viņiem – dejotāju neizsmeļamā enerģija un degsme piepilda ar prieku un ik reizi no jauna apliecina, ka mana īstā vieta ir tieši šeit.",
+  ],
+  vetra: [
+    "Man ļoti patīk skatīties, kā Rotaļa dejo, bet jāatzīst – tik skaistu teciņa soli kā man pašai vēl neesmu ieraudzījusi.",
+  ],
+};
+
 const ManagmentContainer = () => {
   return (
     <>
       <Info
         src={diana}
-        // q1="Vai atceries savu pirmo satikšanos ar Rotaļu?"
-        // q2="Ja tu būtu kāda no Rotaļas repertuāra dejām, tad kura? Kāpēc? "
-        // q3="Kāds ir tavs mīļākais tautas tērps Rotaļas noliktavā? Kāpēc tieši šis?"
-        // q4="Kā tu atceries visu Rotaļas dejotāju vārdus? "
-        // q5="Kāda ir tava spilgtākā atmiņa, kas radīta kopā ar Rotaļu?"
-        // q6="Ko Rotaļa ir tev iemācījusi?"
-        // q7="Kas/kāds ir īsts Rotaļnieks?"
-        // q8="Cik augstu jākāpj, lai tiktu uz Rotaļas mēģinājumu zāli VEF Kultūras pilī?"
-        // a1="Šķiet, ka pati pirmā reize, kad domāju, kas ir šis fenomens, bija filmas 'Vella kalpi'un 'Vella kalpi vellna dzirdnavā' epizodes ar čigānietes lomas atveidotāju Aiju Baumani. Skatījos/skatos tūkstošiem reižu. Mīļākās filmas.
-        // Otrā reize un īsta satikšanās ar Rotaļu ir saistīta ar sk.Ginta Baumaņa darbu Dobelē.        "
-        // a2="Es būtu jebkura no Rotaļas dejām. Katrā ir kaut kas svarīgs, vērtīgs, dzīvs."
-        // a3="Šajā brīdī lībiešu tautas tērps. Esam to atjaunojuši un papildinājuši ar skaistiem aksesuāriem. Tas dejotājām dod īpašu mirdzumu, stāju un ir atšķirīgs. Vienlīdz blakus liktu arī Nīcas tautas tērpu. Ar to esam procesā uz atjaunošanu. "
-        // a4="Neskaitāmas reizes bīdot Excel tabuliņu sastāvus."
-        // a5="2023. gada Deju svētku lielkoncertā “Balts” Rotaļnieki lepni iedejo arēnā kā pirmie uz deju Es tev došu skaistu sētu."
-        // a6="Viens tu vari daudz, bet komandā - visu!"
-        // a7="Patiess no papēžiem līdz matu galiem."
-        // a8="4 gadus kā minimums, 10 ir tikai sākums..."
         name="Diāna Gavare"
         title="TDA Rotaļa mākslinieciskā vadītāja"
+        bio={teachers.diana}
       />
       <InfoReverse
         src={anta}
-        // q1="Vai atceries savu pirmo satikšanos ar Rotaļu?"
-        // q2="Ja tu būtu kāda no Rotaļas repertuāra dejām, tad kura? Kāpēc? "
-        // q3="Kāds ir tavs mīļākais tautas tērps Rotaļas noliktavā? Kāpēc tieši šis?"
-        // q4="Kā tu atceries visu Rotaļas dejotāju vārdus? "
-        // q5="Kāda ir tava spilgtākā atmiņa, kas radīta kopā ar Rotaļu?"
-        // q6="Ko Rotaļa ir tev iemācījusi?"
-        // q7="Kas/kāds ir īsts Rotaļnieks?"
-        // q8="Cik augstu jākāpj, lai tiktu uz Rotaļas mēģinājumu zāli VEF Kultūras pilī?"
-        // a1="Šķiet, ka pati pirmā reize, kad domāju, kas ir šis fenomens, bija filmas 'Vella kalpi'un 'Vella kalpi vellna dzirdnavā' epizodes ar čigānietes lomas atveidotāju Aiju Baumani. Skatījos/skatos tūkstošiem reižu. Mīļākās filmas.
-        // Otrā reize un īsta satikšanās ar Rotaļu ir saistīta ar sk.Ginta Baumaņa darbu Dobelē.        "
-        // a2="Es būtu jebkura no Rotaļas dejām. Katrā ir kaut kas svarīgs, vērtīgs, dzīvs."
-        // a3="Šajā brīdī lībiešu tautas tērps. Esam to atjaunojuši un papildinājuši ar skaistiem aksesuāriem. Tas dejotājām dod īpašu mirdzumu, stāju un ir atšķirīgs. Vienlīdz blakus liktu arī Nīcas tautas tērpu. Ar to esam procesā uz atjaunošanu. "
-        // a4="Neskaitāmas reizes bīdot Excel tabuliņu sastāvus."
-        // a5="2023. gada Deju svētku lielkoncertā “Balts” Rotaļnieki lepni iedejo arēnā kā pirmie uz deju Es tev došu skaistu sētu."
-        // a6="Viens tu vari daudz, bet komandā - visu!"
-        // a7="Patiess no papēžiem līdz matu galiem."
-        // a8="4 gadus kā minimums, 10 ir tikai sākums..."
-        name="Anta Grīnvalde "
-        title="TDA Rotaļa repetitore"
+        name="Anta Grīnvalde"
+        title="Mākslinieciskās vadītājas asistente"
+        bio={teachers.anta}
       />
       <Info
         src={donats}
-        // q1="Vai atceries savu pirmo satikšanos ar Rotaļu?"
-        // q2="Ja tu būtu kāda no Rotaļas repertuāra dejām, tad kura? Kāpēc? "
-        // q3="Kāds ir tavs mīļākais tautas tērps Rotaļas noliktavā? Kāpēc tieši šis?"
-        // q4="Kā tu atceries visu Rotaļas dejotāju vārdus? "
-        // q5="Kāda ir tava spilgtākā atmiņa, kas radīta kopā ar Rotaļu?"
-        // q6="Ko Rotaļa ir tev iemācījusi?"
-        // q7="Kas/kāds ir īsts Rotaļnieks?"
-        // q8="Cik augstu jākāpj, lai tiktu uz Rotaļas mēģinājumu zāli VEF Kultūras pilī?"
-        // a1="Šķiet, ka pati pirmā reize, kad domāju, kas ir šis fenomens, bija filmas 'Vella kalpi'un 'Vella kalpi vellna dzirdnavā' epizodes ar čigānietes lomas atveidotāju Aiju Baumani. Skatījos/skatos tūkstošiem reižu. Mīļākās filmas.
-        // Otrā reize un īsta satikšanās ar Rotaļu ir saistīta ar sk.Ginta Baumaņa darbu Dobelē.        "
-        // a2="Es būtu jebkura no Rotaļas dejām. Katrā ir kaut kas svarīgs, vērtīgs, dzīvs."
-        // a3="Šajā brīdī lībiešu tautas tērps. Esam to atjaunojuši un papildinājuši ar skaistiem aksesuāriem. Tas dejotājām dod īpašu mirdzumu, stāju un ir atšķirīgs. Vienlīdz blakus liktu arī Nīcas tautas tērpu. Ar to esam procesā uz atjaunošanu. "
-        // a4="Neskaitāmas reizes bīdot Excel tabuliņu sastāvus."
-        // a5="2023. gada Deju svētku lielkoncertā “Balts” Rotaļnieki lepni iedejo arēnā kā pirmie uz deju Es tev došu skaistu sētu."
-        // a6="Viens tu vari daudz, bet komandā - visu!"
-        // a7="Patiess no papēžiem līdz matu galiem."
-        // a8="4 gadus kā minimums, 10 ir tikai sākums..."
-        name="Donats Rudzītis"
+        name="Donāts Rudzītis"
         title="TDA Rotaļa repetitors"
+        bio={teachers.donats}
       />
       <InfoReverse
         src={valentina}
-        // q1="Vai atceries savu pirmo satikšanos ar Rotaļu?"
-        // q2="Ja tu būtu kāda no Rotaļas repertuāra dejām, tad kura? Kāpēc? "
-        // q3="Kāds ir tavs mīļākais tautas tērps Rotaļas noliktavā? Kāpēc tieši šis?"
-        // q4="Kā tu atceries visu Rotaļas dejotāju vārdus? "
-        // q5="Kāda ir tava spilgtākā atmiņa, kas radīta kopā ar Rotaļu?"
-        // q6="Ko Rotaļa ir tev iemācījusi?"
-        // q7="Kas/kāds ir īsts Rotaļnieks?"
-        // q8="Cik augstu jākāpj, lai tiktu uz Rotaļas mēģinājumu zāli VEF Kultūras pilī?"
-        // a1="Šķiet, ka pati pirmā reize, kad domāju, kas ir šis fenomens, bija filmas 'Vella kalpi'un 'Vella kalpi vellna dzirdnavā' epizodes ar čigānietes lomas atveidotāju Aiju Baumani. Skatījos/skatos tūkstošiem reižu. Mīļākās filmas.
-        // Otrā reize un īsta satikšanās ar Rotaļu ir saistīta ar sk.Ginta Baumaņa darbu Dobelē.        "
-        // a2="Es būtu jebkura no Rotaļas dejām. Katrā ir kaut kas svarīgs, vērtīgs, dzīvs."
-        // a3="Šajā brīdī lībiešu tautas tērps. Esam to atjaunojuši un papildinājuši ar skaistiem aksesuāriem. Tas dejotājām dod īpašu mirdzumu, stāju un ir atšķirīgs. Vienlīdz blakus liktu arī Nīcas tautas tērpu. Ar to esam procesā uz atjaunošanu. "
-        // a4="Neskaitāmas reizes bīdot Excel tabuliņu sastāvus."
-        // a5="2023. gada Deju svētku lielkoncertā “Balts” Rotaļnieki lepni iedejo arēnā kā pirmie uz deju Es tev došu skaistu sētu."
-        // a6="Viens tu vari daudz, bet komandā - visu!"
-        // a7="Patiess no papēžiem līdz matu galiem."
-        // a8="4 gadus kā minimums, 10 ir tikai sākums..."
         name="Valentīna Popova"
-        title="TDA Rotaļa koncertmeistere"
+        title="TDA Rotaļa koncertmeistare"
+        bio={teachers.valentina}
       />
       <Info
         src={vetra}
-        // q1="Vai atceries savu pirmo satikšanos ar Rotaļu?"
-        // q2="Ja tu būtu kāda no Rotaļas repertuāra dejām, tad kura? Kāpēc? "
-        // q3="Kāds ir tavs mīļākais tautas tērps Rotaļas noliktavā? Kāpēc tieši šis?"
-        // q4="Kā tu atceries visu Rotaļas dejotāju vārdus? "
-        // q5="Kāda ir tava spilgtākā atmiņa, kas radīta kopā ar Rotaļu?"
-        // q6="Ko Rotaļa ir tev iemācījusi?"
-        // q7="Kas/kāds ir īsts Rotaļnieks?"
-        // q8="Cik augstu jākāpj, lai tiktu uz Rotaļas mēģinājumu zāli VEF Kultūras pilī?"
-        // a1="Šķiet, ka pati pirmā reize, kad domāju, kas ir šis fenomens, bija filmas 'Vella kalpi'un 'Vella kalpi vellna dzirdnavā' epizodes ar čigānietes lomas atveidotāju Aiju Baumani. Skatījos/skatos tūkstošiem reižu. Mīļākās filmas.
-        // Otrā reize un īsta satikšanās ar Rotaļu ir saistīta ar sk.Ginta Baumaņa darbu Dobelē.        "
-        // a2="Es būtu jebkura no Rotaļas dejām. Katrā ir kaut kas svarīgs, vērtīgs, dzīvs."
-        // a3="Šajā brīdī lībiešu tautas tērps. Esam to atjaunojuši un papildinājuši ar skaistiem aksesuāriem. Tas dejotājām dod īpašu mirdzumu, stāju un ir atšķirīgs. Vienlīdz blakus liktu arī Nīcas tautas tērpu. Ar to esam procesā uz atjaunošanu. "
-        // a4="Neskaitāmas reizes bīdot Excel tabuliņu sastāvus."
-        // a5="2023. gada Deju svētku lielkoncertā “Balts” Rotaļnieki lepni iedejo arēnā kā pirmie uz deju Es tev došu skaistu sētu."
-        // a6="Viens tu vari daudz, bet komandā - visu!"
-        // a7="Patiess no papēžiem līdz matu galiem."
-        // a8="4 gadus kā minimums, 10 ir tikai sākums..."
         name="Vētra"
-        title="TDA Rotaļa repetitors"
+        title="TDA Rotaļa repetitore"
+        bio={teachers.vetra}
       />
     </>
   );

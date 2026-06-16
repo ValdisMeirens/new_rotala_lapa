@@ -113,8 +113,11 @@ const Nav = () => {
             <Link href="/dejotaji" className={styles.size}>
               DEJOTĀJI
             </Link>
-            <Link href="/par_mums" className={styles.size}>
+            {/* <Link href="/par_mums" className={styles.size}>
               PAR MUMS
+            </Link> */}
+            <Link href="/vesture" className={styles.size}>
+              <li>VĒSTURE</li>
             </Link>
             <Link href="/parotalasimies" className={styles.size}>
               <li>PAROTAĻĀSIMIES</li>
@@ -179,8 +182,11 @@ const Nav = () => {
             <Link href="/dejotaji" className={styles.link}>
               <li>DEJOTĀJI</li>
             </Link>
-            <Link href="/par_mums" className={styles.link}>
+            {/* <Link href="/par_mums" className={styles.link}>
               <li>PAR MUMS</li>
+            </Link> */}
+            <Link href="/vesture" className={styles.link}>
+              <li>VĒSTURE</li>
             </Link>
             <Link href="/parotalasimies" className={styles.link}>
               <li>PAROTAĻĀSIMIES</li>

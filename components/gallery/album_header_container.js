@@ -69,10 +69,13 @@ const AlbumHeaderContainer = () => {
               <Link href="/dejotaji" className={styles.text}>
                 DEJOTĀJI
               </Link>
-              <Link href="/par_mums" className={styles.text}>
+              {/* <Link href="/par_mums" className={styles.text}>
                 PAR MUMS
+              </Link> */}
+              <Link href="/vesture" className={styles.text}>
+                VĒSTURE
               </Link>
-              <Link href="/par_mums" className={styles.text}>
+              <Link href="/parotalasimies" className={styles.text}>
                 PAROTAĻĀSIMIES
               </Link>
             </div>
@@ -144,10 +147,13 @@ const AlbumHeaderContainer = () => {
           <Link href="/dejotaji" className={styles.size}>
             DEJOTĀJI
           </Link>
-          <Link href="/par_mums" className={styles.size}>
+          {/* <Link href="/par_mums" className={styles.size}>
             PAR MUMS
+          </Link> */}
+          <Link href="/vesture" className={styles.size}>
+            VĒSTURE
           </Link>
-          <Link href="/par_mums" className={styles.size}>
+          <Link href="/parotalasimies" className={styles.size}>
             PAROTAĻĀSIMIES
           </Link>
         </div>

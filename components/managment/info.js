@@ -500,6 +500,13 @@ const Info = (props) => {
         <div className={styles.text_container}>
           <h1 className={styles.name}>{props.name}</h1>
           <h2 className={styles.title}>{props.title}</h2>
+          {props.bio && (
+            <div className={styles.bio}>
+              {props.bio.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <div className={styles.div2}>
@@ -509,7 +516,8 @@ const Info = (props) => {
             fill
             className={styles.img}
             alt="vadība"
-            sizes="100vw"
+            sizes="(max-width: 765px) 100vw, 55vw"
+            quality={100}
           />
         </div>
       </div>

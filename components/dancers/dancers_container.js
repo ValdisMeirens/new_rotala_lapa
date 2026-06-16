@@ -56,7 +56,7 @@ import roberts_petersons from "@/public/dancers/roberts_petersons.webp";
 import tristans_laucis from "@/public/dancers/tristans_laucis.webp";
 import brigita_stratane from "@/public/dancers/brigita_stratane.webp";
 import gita_vaice from "@/public/dancers/gita_vaice.webp";
-import elizabete_vilne from "@/public/dancers/elizabete_vilne.webp";
+// import elizabete_vilne from "@/public/dancers/elizabete_vilne.webp";
 import adrians_gutsmits from "@/public/dancers/adrians_gutsmits.webp";
 import alise_jurasevska from "@/public/dancers/alise_jurasevska.webp";
 import ance_mezaka from "@/public/dancers/ance_mezaka.webp";
@@ -589,14 +589,6 @@ const DancersContainer = () => {
       dejotaji_surname: "Vecziediņa",
       dejotaji_dz: "siev",
       dejotaji_foto: marta_vecziedina,
-      rotalnieks: 0,
-    },
-    {
-      dejotaji_id: 359,
-      dejotaji_name: "Elizabete",
-      dejotaji_surname: "Vilne",
-      dejotaji_dz: "siev",
-      dejotaji_foto: elizabete_vilne,
       rotalnieks: 0,
     },
     {
