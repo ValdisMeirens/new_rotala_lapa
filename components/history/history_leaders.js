@@ -126,11 +126,10 @@ const HistoryLeaders = () => {
                   <span className={styles.cardName}>{leader.name}</span>
                   <span className={styles.cardYears}>{leader.years}</span>
                 </button>
-                {isActive &&
-                  renderLeaderDetails(
-                    leader,
-                    `${styles.details} ${styles.mobileDetails}`,
-                  )}
+                {renderLeaderDetails(
+                  leader,
+                  `${styles.details} ${styles.mobileDetails}`,
+                )}
               </Fragment>
             );
           })}
