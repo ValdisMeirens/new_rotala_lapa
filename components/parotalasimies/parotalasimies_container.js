@@ -7,14 +7,29 @@ const ParotalasimiesContainer = () => {
     {
       question: "Kad un kur varu pievienoties Rotaļai?",
       answer:
-        "2025. gada 8. un 10. septembrī plkst. 19.30 VEF Kultūras pils (Ropažu iela 2) 3. stāva mēģinājumu zālē. Ierašanās pa dienesta ieeju (no Jaunās Teikas puses). Seko norādēm!",
+        "2026. gada 26. augustā, 2. septembrī un 10. septembrī plkst. 19.30 VEF Kultūras pils (Ropažu iela 2) 3. stāva mēģinājumu zālē. Ierašanās pa dienesta ieeju (no Jaunās Teikas puses). Seko norādēm!",
     },
     {
       question: "Kā notiek jauno dejotāju uzņemšana?",
-      answer:
-        "1) Izvēlies savu laimīgo uzņemšanas datumu un uzraksti ziņu Diānai (gavarediana@gmail.com).\n" +
-        "2) Kārtojot somu, neaizmirsti dejošanai atbilstošu apģērbu (krekliņš/bodijs, bruncīši/šorti), kā arī piemērotus apavus. Meitenēm noderēs kāda copadata, lai mati būtu glīti sakārtoti.\n" +
-        "3) Ierodies laicīgi, lai jau 19.30 varam sākt dejot! Ar tevi darbosies visa mūsu pedagogu komanda - Donāts, Anta un Diāna.",
+      answer: (
+        <>
+          1) Aizpildi{" "}
+          <a
+            href="https://forms.gle/1y9H1hJjha1N3SrD6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.formLink}
+          >
+            <bold></bold>anketu
+          </a>{" "}
+          un izvēlies savu laimīgo uzņemšanas datumu.
+          <br />
+          2) Kārtojot somu, neaizmirsti dejošanai atbilstošu apģērbu
+          (krekliņš/bodijs, bruncīši/šorti), kā arī piemērotus apavus.
+          <br />
+          3) Ierodies laicīgi, lai jau 19.30 varam sākt dejot!
+        </>
+      ),
     },
     {
       question: "Vai ir nepieciešama iepriekšēja dejošanas pieredze?",
@@ -24,7 +39,7 @@ const ParotalasimiesContainer = () => {
     {
       question: "No cik gadiem var dejot Rotaļā?",
       answer:
-        "Dejot var sākt no 16 gadiem, bet jārēķinās, ka mēģinājumi beidzas vēlu, kā arī koncertizbraucieni un citas aktivitātes var ieilgt pēc pusnakts.",
+        "Ņemot vērā vēlās mēģinājumu beigas, kā arī koncertizbraucienus un citas aktivitātes, kas nereti ieilgst pat pēc pusnakts, Rotaļai vari pievienoties no 18 gadu vecuma.",
     },
     {
       question: "Cik reizes nedēļā dejojat?",

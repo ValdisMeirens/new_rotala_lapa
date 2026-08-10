@@ -39,7 +39,8 @@ const leaders = [
     years: "no 2019. gada",
     image: "/history/diana_gavare.jpeg",
     imagePosition: "center center",
-    intro: "Horeogrāfe, iedvesmojoša personība, Rotaļniece.",
+    intro:
+      "Horeogrāfe, iedvesmojoša personība, Rotaļniece, IX Vidējās paaudzes dejotāju svētku un II Jauniešu deju svētku virsvadītāja. Ventspils valstspilsētas un novada deju kolektīvu virsvadītāja.",
     paragraphs: [
       "Diāna ir Rotaļniece kopš 2012. gada, bet no 2019. gada – Rotaļas mākslinieciskā vadītāja, ansambļa dvēsele un mūžīgais dzinējs, kas liek traukties uz priekšu ne vien Rotaļniekiem, bet arī visiem apkārtējiem.",
       "Rotaļai ir ļoti paveicies, jo Diāna ir talantīga horeogrāfe, kuras radītās dejas jau vairākkārt augsti novērtētas jaunrades deju konkursos, kā arī iekļautas lielu deju notikumu repertuāros.",
