@@ -1,6 +1,6 @@
 import diana from "@/public/vadiba/diana.webp";
 import anta from "@/public/vadiba/anta.webp";
-import donats from "@/public/vadiba/donats.webp";
+import laine from "@/public/vadiba/laine.webp";
 import valentina from "@/public/vadiba/valentina.webp";
 import vetra from "@/public/vadiba/vetra.webp";
 
@@ -20,11 +20,9 @@ const teachers = {
     "Esmu veidojusi horeogrāfijas koncertiem, skatuves projektiem un video darbiem, kā arī strādājusi radošās komandās kopā ar mūziķiem un izpildītājiem.",
     "Savā pedagoģiskajā darbā uzsveru disciplīnu, kustību kvalitāti, muzikālo izjūtu un individuālu pieeju katram dejotājam, radot profesionālu un atbalstošu mācību vidi. Rotaļai pievienojos 2023. gadā.",
   ],
-  donats: [
-    "Kopš 2009. gada esmu profesionāls baleta mākslinieks Latvijas Nacionālās Operas un Baleta trupā.",
-    "Esmu ieguvis bakalaura grādu horeogrāfijā Jāzepa Vītola Latvijas Mūzikas akadēmijā.",
-    "Paralēli klasiskajai dejai kopš 2013. gada darbojos kontaktimprovizācijā (contact improvization). Esmu piedalījies vairākos semināros un vadījis daudzas klases Contact Improvisation Latvia organizācijas projektu ietvaros un ne tikai.",
-    "Esmu Rotaļas repetitors kopš 2021. gada. Īpaši piestrādāju pie Rotaļnieku klasiskās dejas tehnikas, lai kustības ir plašas un izteiksmīgas un ķermenis – vingrs un koordinēts.",
+  laine: [
+    "Balets ir mana kaislība un ikdiena jau no 10 gadu vecuma, kad iestājos Rīgas Baleta Skolā.  Absolvējot to, jau zināju, ka darbu turpināšanu  Latvijas Nacionālajā Operā un Baletā, kur jau strādāju vairāk kā 20 gadus. Pieredze ir bijusi bagātīga šo gadu garumā. Piedaloties dažādu pasaules svalenu horeogrāfu izrādēs un neskaitāmās meistarklasēs, kā arī apgūstot “Ballet Body Logic” metodi. Ir iegūts arī sertifikāts pedagoģijā, kā arī pieredze pedagoga amatā Rīgas Baleta Skolā.",
+    "Dejot prieks manī mājo, kopš sevi atceros un joprojām tas nav zudis. Īpaša mīlestība gadu gaitā ir izveidojusies pret treniņiem, to jēgu un vērtību.  Ikdienā strādājot ar kustību un ķermeni, saskaroties ar traumām, esmu iedziļinājusies kā trenēties efektīvi un ķermenim draudzīgi. Vēlos dalīties ar savu pieredzi un zināšanām, aiznesot līdz katram no jums, ka baletu var dejot viegli un veselīgi, ja saprotam savu ķermeni, kustības jēgu un principus. Tādejādi veidojot skaistu dejas ķermeni.",
   ],
   valentina: [
     "Bērnībā sapņoju arī par baletu, bet dzīves ceļi aizveda klaviermūzikas virzienā. Pirms sāku spēlēt dejotājiem, strādāju mūzikas skolā par klavierspēles pedagoģi. Biju koncertmeistare vairākiem koru kolektīviem.",
@@ -51,10 +49,10 @@ const ManagmentContainer = () => {
         bio={teachers.anta}
       />
       <Info
-        src={donats}
-        name="Donāts Rudzītis"
-        title="TDA Rotaļa repetitors"
-        bio={teachers.donats}
+        src={laine}
+        name="Laine Paiķe"
+        title="TDA Rotaļa repetitore"
+        bio={teachers.laine}
       />
       <InfoReverse
         src={valentina}

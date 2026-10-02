@@ -92,6 +92,11 @@
   opacity: 1;
 }
 
+.noPhoto {
+  opacity: 1;
+  background-color: #202024;
+}
+
 .imagecontainer:hover .img {
   filter: brightness(0.3);
   transform: rotate(2deg);

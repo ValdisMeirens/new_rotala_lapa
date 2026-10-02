@@ -50,7 +50,7 @@ const leaders = [
 ];
 
 const people = [
-  "Donāts Rudzītis – Rotaļas “klasikas guru”, ar baletdejotāja pieredzi nodrošina, ka Rotaļnieki prot klasikas pamatsoļus un jūtas ērti pie baleta stangas.",
+  "Laine Paiķe – Rotaļas “klasikas guru”, ar baletdejotājas pieredzi nodrošina, ka Rotaļnieki prot klasikas pamatsoļus un jūtas ērti pie baleta stangas.",
   "Anta Grīnvalde – horeogrāfe un Diānas asistente, palīdz dejotājiem atrast nozīmi un jēgu katrai kustībai, lai dejas tiktu izdejotas, ne vienkārši atdejotas.",
   "Valentīna Popova – koncertmeistare, ar savu muzikālo izjūtu palīdz Rotaļniekiem sajust ritmu un dejas noskaņu, kā arī katrā mēģinājumā liek sajusties kā klavierkoncertā.",
 ];

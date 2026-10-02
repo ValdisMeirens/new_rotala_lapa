@@ -7,7 +7,7 @@ const ParotalasimiesContainer = () => {
     {
       question: "Kad un kur varu pievienoties Rotaļai?",
       answer:
-        "2026. gada 26. augustā, 2. septembrī un 10. septembrī plkst. 19.30 VEF Kultūras pils (Ropažu iela 2) 3. stāva mēģinājumu zālē. Ierašanās pa dienesta ieeju (no Jaunās Teikas puses). Seko norādēm!",
+        "2026. gada 26. augustā, 2. septembrī un 7. septembrī plkst. 19.30 VEF Kultūras pils (Ropažu iela 2) 3. stāva mēģinājumu zālē. Ierašanās pa dienesta ieeju (no Jaunās Teikas puses). Seko norādēm!",
     },
     {
       question: "Kā notiek jauno dejotāju uzņemšana?",

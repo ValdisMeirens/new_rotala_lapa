@@ -162,9 +162,7 @@ const EventContainer = ({ calendar }) => {
 
   return (
     <section className={styles.container}>
-      <h1 className={styles.heading}>
-        <Link href={`/kalendars/`}>KALENDĀRS</Link>
-      </h1>
+      <h1 className={styles.heading}>KALENDĀRS</h1>
       <div className={styles.eventscontainer}>{calendar_array}</div>
       <AnimatePresence>
         {showOverlay && (
