@@ -45,6 +45,7 @@ const leaders = [
       "Diāna ir Rotaļniece kopš 2012. gada, bet no 2019. gada – Rotaļas mākslinieciskā vadītāja, ansambļa dvēsele un mūžīgais dzinējs, kas liek traukties uz priekšu ne vien Rotaļniekiem, bet arī visiem apkārtējiem.",
       "Rotaļai ir ļoti paveicies, jo Diāna ir talantīga horeogrāfe, kuras radītās dejas jau vairākkārt augsti novērtētas jaunrades deju konkursos, kā arī iekļautas lielu deju notikumu repertuāros.",
       "Diāna ar savu entuziasmu “aplipina” visus blakus esošos, mudina DARĪT un IZDARĪT līdz galam un būt čakliem darbu darītājiem.",
+      "Ar Diānu Rotaļā kopā strādājusi Santa Irbe, kas Rotaļniekiem palīdzējusi pievērst lielāku uzmanību fiziskajai sagatavotībai, un Donats Rudzītis, kas asinājis dejotāju klasikas prasmes un iepazīstinājis ar kontaktimprovizācijas mākslu.",
     ],
   },
 ];
